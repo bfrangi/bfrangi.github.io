@@ -9,7 +9,30 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Welcome!</h1>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    
+    <p>Welcome to the personal site of Bernat Frangi Mahiques, Undergraduate at the the <a href="https://www.uc3m.es/Home">Carlos III University</a> (Madrid, Spain) studying the <a href="https://www.uc3m.es/bachelor-degree/physics-industrial">Double Bachelor Degree in Physics Engineering and Industrial Technologies Engineering</a>.</p>
+
+    <p>In these pages you will find information about my background and my work: projects, experience, achievements and more. I would like to introduce myself with a quote from <em>Blaise Pascal</em> that I find inspiring for science, research and, in general, life:</p>
+
+    <blockquote>
+      <p>Those honor nature well, who teach that she can speak on everything.<br />
+      <strong>Blaise Pascal, Pensés</strong></p>
+    </blockquote>
+
+    <p>I find motivation in knowing that nature always has something new to teach, whether about physics, philosophy or simply life. You just have to be willing, attentive and patient enough to find out what that is.</p>
+
+    <p>Please, enjoy!</p>
+
+    <p>If you are interested, you can find the source code for this site on <em>GitHub</em>: <a href="https://github.com/bfrangi">bfrangi</a> / <a href="https://github.com/bfrangi/bfrangi.github.io">bfrangi.github.io</a>.</p>
+
+  </div>
+
+  <!-- {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -27,6 +50,6 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-  {%- endif -%}
+  {%- endif -%} -->
 
 </div>
