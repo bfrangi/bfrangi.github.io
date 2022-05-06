@@ -28,15 +28,15 @@ Institution: *Carlos III University, Madrid (Spain)*\
 Language: Bilingual (Spanish and English)
 
 
-**Technology Bachillerato** (09/2016 - 07/2020)\
+**Technology Bachillerato** (09/2016 to 07/2020)\
 Institution: *Màrius Torres, Lleida (Spain)*
 
 
-**High School (Y7-Y9)** (09/2013 - 07/2016)\
+**High School (Y7-Y9)** (09/2013 to 07/2016)\
 Institution: *Mary's Catholic High School, Chesterfield (UK)*
 
 
-**Primary School (Y5-Y6)** (09/2011 - 07/2013)\
+**Primary School (Y5-Y6)** (09/2011 to 07/2013)\
 Institution: *Primary School, Curbar (UK)*
  
  
