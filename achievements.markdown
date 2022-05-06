@@ -1,0 +1,19 @@
+---
+layout: page
+title: "Achievements"
+permalink: /achievements/ 
+---
+## Achievements, Honours and Awards
+
+- Honours in: [Calculus I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15489&idioma=2), [Programming](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15491&idioma=2), [Physics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18297&idioma=2), [Physics II](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18300&idioma=2), [Material Science and Engineering](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18304&idioma=2), and [Quantum Physics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18306&idioma=2).
+
+- Special Mention for Excellent Performance at the [Spanish National University Access Evaluations](https://universitats.gencat.cat/ca/proves-acces-PAU-PAP/) (Score: 13.78/14).
+
+- First Prize at [Premi a Treballs de Recerca](https://www.udl.cat/ca/serveis/seu/treballsrecerca/) for High School Research Project in Engineering from the *Universitat de Lleida*.
+
+- First Prize at the [Premi Argo](https://www.uab.cat/web/programa-argo/programa-argo-estudiants/estudiants/convocatoria-1345719279744.html) for High School Research Project in Engineering from the *Universitat Autonoma de Barcelona*.
+
+- Third Prize at the Catalan Phase of the [Physics Olympiads](https://blogs.iec.cat/scfis/category/oimpiada/) organised by the *Catalan Society of Physics* in Lleida.
+
+- First Prize at the [Dissabte de les Matemàtiques a Lleida](http://www.eps.udl.cat/ca/agenda/Dissabte-de-les-Matematiques-a-Lleida) (Maths Competition).
+ 
