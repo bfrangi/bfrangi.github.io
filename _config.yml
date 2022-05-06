@@ -21,13 +21,15 @@
 title: Bernat Frangi Home Page
 email: bernat.frangi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Bernat Frangi Mahiques, Undergraduate Student of the Dual Bachelor
+  Degreen in Physics Engineering and Industrial Technologies Engineering
+  at the Universidad Carlos III in Madrid, Spain.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# If using a Github User page (i.e. username.github.io) to host your site, delete the default url that is below.
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#stackoverflow_username: 15159198/clerni
+github_username:  bfrangi
+linkedin_username: bernat-frangi-767748225 
 
 # Build settings
 theme: minima
