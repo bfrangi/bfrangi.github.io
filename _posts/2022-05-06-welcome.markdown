@@ -4,12 +4,14 @@ title:  "Welcome!"
 date:   2022-05-06 10:17:59 +0200
 categories: welcome
 ---
-Welcome to the personal site of Bernat Frangi Mahiques, Undergraduate at the the [Carlos III University](https://www.uc3m.es/Home) (Madrid, Spain) stydying the [Double Bachelor Degree in Physics Engineering and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial).
+Welcome to the personal site of Bernat Frangi Mahiques, Undergraduate at the the [Carlos III University](https://www.uc3m.es/Home) (Madrid, Spain) studying the [Double Bachelor Degree in Physics Engineering and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial).
 
-In these pages you will find information about my background and my work: projects, experience, achievements and more. I would like to introduce myself with a quote from *Blaise Pascal* to inspire the world of science, research and, in general, life:
+In these pages you will find information about my background and my work: projects, experience, achievements and more. I would like to introduce myself with a quote from *Blaise Pascal* that I find inspiring for science, research and, in general, life:
 
 > Those honor nature well, who teach that she can speak on everything.\
 > **Blaise Pascal, Pensés** 
+
+I find motivation in knowing that nature always has something new to teach, whether about physics, philosophy or simply life. You just have to be willing, attentive and patient enough to find out what that is.
 
 Please, enjoy!
 
