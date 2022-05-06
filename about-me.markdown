@@ -23,7 +23,7 @@ Five years later, at the age of 14, I moved back to Spain on my own (my family r
 
 #  Education
 
-**Dual Bachelor in Engineering Physics and Industrial Technologies Engineering** (09/2020 - Present)\
+**Dual Bachelor in Engineering Physics and Industrial Technologies Engineering** (09/2020 to Present)\
 Institution: *Carlos III University, Madrid (Spain)*\
 Language: Bilingual (Spanish and English)
 
