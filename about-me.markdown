@@ -8,7 +8,7 @@ permalink: /about-me/
 Bernat Frangi Mahiques
 </h2>
 </div>
-<div style="display:inline-block;vertical-align:bottom; padding-left:10px; float: right">
+<div style="display:inline-block;vertical-align:bottom; padding-left:30px; float: right">
 <img src="https://i.stack.imgur.com/PJTuu.jpg" height="auto" width="150" style="border-radius:50%">
 </div>
 
