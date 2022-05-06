@@ -50,4 +50,4 @@ I am a very quick learner, able to face new tasks and situations independently. 
 
 Another skill that I have developed a lot during the last few years is programming. I have extensive knowledge of Python and other programming languages, such as HTML and JavaScript. I have experience making websites with *Django* and making mobile applications with *React Native*. Most of this has been self-taught. However, the most important thing that I have gained from this, more than the familiarity with the mentioned programming languages, is the skill of computational thinking: solving problems by breaking them down into simpler algorithmic steps.
 
-All these skills have been key to my success so far, and I am always looking for the opportunity to develop them further, as well as learn new ones that could be useful to me in the future.
+All these skills have been key to my success so far, and I am always looking for the opportunity to develop them further, as well as learn new ones that could be useful to me and others in the future.
