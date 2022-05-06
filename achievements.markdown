@@ -17,3 +17,11 @@ permalink: /achievements/
 
 - First Prize at the [Dissabte de les Matemàtiques a Lleida](http://www.eps.udl.cat/ca/agenda/Dissabte-de-les-Matematiques-a-Lleida) (Maths Competition).
  
+## Courses and Certificates
+
+- C1 Advanced English Certificate (Escuela Oficial de Idiomas)
+- A2 German Certificate (Goethe Institut)
+- 4h LaTeX Course at UC3M
+- 30h Greek Etymology Course at UdL (Universidad de Lleida)
+<!--Leisure Time Monitor License-->
+ 

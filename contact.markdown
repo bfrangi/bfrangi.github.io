@@ -7,7 +7,7 @@ Email: bernat.frangi@gmail.com
 
 Phone: +34 665 060 901
 
-Homepage: [bfrangi.io](https://bfrangi.github.io/)
+Homepage: [bfrangi.github.io](https://bfrangi.github.io/)
 
 GitHub: [@bfrangi](https://github.com/bfrangi)
 
