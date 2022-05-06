@@ -3,7 +3,16 @@ layout: page
 title: "About Me"
 permalink: /about-me/ 
 ---
-## Bernat Frangi Mahiques
+<div style="display:inline-block;">
+<h2>
+Bernat Frangi Mahiques
+</h2>
+</div>
+<div style="display:inline-block;vertical-align:bottom; padding-left:10px; float: right">
+<img src="https://i.stack.imgur.com/PJTuu.jpg" height="auto" width="150" style="border-radius:50%">
+</div>
+
+
 
 # Background
 *Second Year Undergraduate Student at the Carlos III University in Madrid [Dual Bachelor in Engineering Physics and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial)*
