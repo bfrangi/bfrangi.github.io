@@ -15,11 +15,11 @@ Bernat Frangi Mahiques
 
 
 # Background
-*Second Year Undergraduate Student at the Carlos III University in Madrid [Dual Bachelor in Engineering Physics and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial)*
+*Third Year Undergraduate Student at the Carlos III University in Madrid [Dual Bachelor in Engineering Physics and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial)*
 
 I was born in *Zaragoza*, Spain. However, since then I have lived in many different places both in *Spain* (including *Barcelona*, *Lleida* and *Madrid*) and in *England* (including *Sheffield*, *Chesterfield* and *Leeds*). At the age of 9, I relocated with my family to the UK, where I was immersed in a new culture and language. The experience taught me how to quickly adapt to new situations and work with different kinds of people, as well as the invaluable skill of the English language, with which I feel as comfortable as any native.
 
-Five years later, at the age of 14, I moved back to Spain on my own (my family remains to this day in the UK) to study high school in Lleida. During that time I lived at a Student Residence with other people of around my age and attended the *Màrius Torres* high school. Once I finished *Bachillerato* (equivalent to the UK *A-Levels*), with a final score of 10/10 over both years, I moved to Madrid to study a **Dual Bachelor in Engineering Physics and Industrial Technologies Engineering** at the *Carlos III University*. Currently, I am in the second year, and so far I have obtained Honors in six subjects, plus excellent scores in most of the others.
+Five years later, at the age of 14, I moved back to Spain on my own (my family remains to this day in the UK) to study high school in Lleida. During that time I lived at a Student Residence with other people of around my age and attended the *Màrius Torres* high school. Once I finished *Bachillerato* (equivalent to the UK *A-Levels*), with a final score of 10/10 over both years, I moved to Madrid to study a **Dual Bachelor in Engineering Physics and Industrial Technologies Engineering** at the *Carlos III University*. Currently, I am in the third year, and so far I have obtained Honors in nine subjects, plus excellent scores in most of the others.
 
 #  Education
 
