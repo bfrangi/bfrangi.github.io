@@ -4,6 +4,18 @@ title: "Projects"
 permalink: /projects/ 
 ---
 
+# PyTransposer
+
+Authors: **B. Frangi**, D. Pärsson\
+Year: 2022\
+Links: [GitHub](https://github.com/bfrangi/pytransposer)
+
+# Django-Tex Syntax Highlighting Extension for VSCode
+
+Authors: **B. Frangi**\
+Year: 2022\
+Links: [GitHub](https://github.com/bfrangi/vscode-django-tex)
+
 # Finite Parallel Plate Capacitor Simulation
 Authors: **B. Frangi**\
 Year: 2022\
@@ -16,7 +28,7 @@ Year: 2021\
 Institution: *Carlos III University*\
 Links: [GitHub](https://github.com/bfrangi/quantum-potential-barrier)
 
-# Design and Building Process of a Hybrid Go-Kart: A comparison between electric and combustion drive systems
+# Design and Building Process of a Hybrid Go-Kart: A Comparison Between Electric and Combustion Drive Systems
 Authors: **B. Frangi**, A. Abad (Supervisor)\
 Year: 2020\
 Institution: *Màrius Torres*\
