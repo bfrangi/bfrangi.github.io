@@ -1,0 +1,275 @@
+---
+layout: post
+title:  "Modify or replace the Kernel of a Debian-based Linux distro before installation"
+date:   2023-02-02 12:22:59 +0100
+categories: welcome
+---
+
+<style>
+    .highlighter-rouge .highlight, code {
+       background-color: #E6E6E6;
+    }
+</style>
+
+### Introduction
+
+Hello everyone! In this post we will learn how to use Cubic to modify any Debian-based Linux distro before even installing it on your system. You can use this method to do make many modifications of your choice. In this blog post, we will use it to replace the kernel of *Ubuntu 20.04.5 LTS* with the kernel of _EndlessOS_, which is the only kernel compatible with the _Dell Inspiron 14 7000_ Laptop.
+
+This post is largely based on the steps shown in [this](https://askubuntu.com/a/741770/1166016) StackOverflow answer and on [this](https://doc.ubuntu-fr.org/inspiron_7490) Ubuntu forum (in French), so we will use those as references. Let's begin!
+
+### Cubic
+
+Cubic (Custom Ubuntu ISO Creator) is a GUI wizard to create a customized Ubuntu Live ISO image. It enables us to easily modify the image through the GUI and it also enables us to modify the Linux file system through an integrated virtual command line environment. In some steps, important parameters are dynamically populated with intelligent defaults to simplify the customization process.
+
+### Installing Cubic
+
+To install Cubic, add the PPA, and install using `apt`.
+
+    sudo apt-add-repository ppa:cubic-wizard/release
+    sudo apt install cubic
+
+
+### Using Cubic
+
+This section is copied from the StackOverflow answer mentioned in the introduction: 
+
+**The Start Page**
+
+Once you have launched Cubic from the dock or application menu, on the Start Page select a new empty directory to keep all your project files.  You can have multiple customization projects, but you must pick a different directory for each project.
+
+[![The Cubic Start Page][1]][1]
+
+**The Project Page**
+
+On the Project Page, select an original ISO image to customize. Information on the Project page will be automatically filled out for you.  You can accept the recommended defaults.  If you chose to change some of the values, the related parameters will automatically be updated as you type.
+
+[![The Cubic Project Page][2]][2]
+
+**The Extract Page**
+
+The next page will display progress as the original ISO is analyzed, important files are copied, and the compressed Linux file system is extracted.
+
+[![The Cubic Extract Page][3]][3]
+
+**The Terminal Page**
+
+The Terminal Page automatically appears once the Linux file system has been extracted.  This is a container environment in which you can make customizations using the command line.  Since you are logged in as a root user, you do not need to use `sudo` when typing commands. Refer to [this](https://askubuntu.com/a/741770/1166016) StackOverflow answer if any errors occur.
+
+[![The Cubic Terminal Page][4]][4]
+
+### Customize Ubuntu
+
+You are now at a stage where you can make any configurations that you want. For example, you can use `apt` to update sources and install applications.  For example, you can install other Linux kernels.
+
+    apt install linux-headers-5.8.0-44-generic linux-image-5.8.0-44-generic
+
+You may click the Back button to change some of your the project parameters you entered on the Project Page.  If you quit the application, you can always open your project and continue making customizations on the Terminal Page, where you left off.
+
+
+### Replacing the kernel
+
+In this section, we will replace the default *Ubuntu* kernel with the *Endless OS* kernel. To install the new kernel, run the following commands on the Cubic terminal:
+   
+```
+wget -q https://deb.endlessos.org/keys/eos-pub-archive-key.asc -O- | apt-key add -
+
+cat > /etc/apt/preferences.d/endlessOS.pref << EOF
+Package: *
+Pin: origin "deb.endlessos.org"
+Pin-Priority: 1
+
+Package: linux-headers-generic
+Pin: origin "deb.endlessos.org"
+Pin-Priority: 1000
+
+Package: linux-image-generic
+Pin: origin "deb.endlessos.org"
+Pin-Priority: 1000
+EOF
+
+echo "deb [arch=amd64] https://deb.endlessos.org/debian master endless" | tee -a /etc/apt/sources.list.d/endlessOS.list
+
+apt update
+apt install linux-headers-generic/master linux-image-generic/master
+```
+To see the installed kernels, run the following command:
+
+```
+dpkg -l 'linux-headers*' 'linux-image*' | grep -E "(ii)|(Name)|(\+\+\+)"
+```
+OR
+```
+apt list --installed | grep -E "(linux-image)|(linux-headers)"
+```
+
+To list only generic kernel files, run:
+
+```
+dpkg -l 'linux-headers-*-generic' 'linux-image-*-generic' | grep -E "(ii)|(Name)|(\+\+\+)"
+```
+
+You can now see that the *Endless OS* kernel is installed. To remove the old *Ubuntu* kernel, run the following command, replacing the version numbers where needed:
+```
+sudo apt purge linux-headers-5.13.0-39-generic linux-image-5.13.0-39-generic
+```
+
+Run the previous `dpkg` commands each time to check if the old kernels have been correctly removed. `unsigned` kernel image/header files may appear. Run `sudo apt autopurge` and see if they disappear.
+
+Once you have replaced the kernel and you are happy with all the other changes you have made, you can continue to the next section.
+
+### Finish off
+
+
+This section is also taken from the StackOverflow answer referenced in the introduction.
+
+**The Copy Files Page**
+
+You can copy files or directories into the *current* directory by dragging them onto the terminal window, by using the copy button in the header bar, or by using the right-click context menu.
+
+The right-click context menu also allows you to copy-and-paste text in the terminal, or you can use <kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>C</kbd> and <kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>V</kbd> shortcuts.
+
+Here is an example to copy additional wallpapers into your customized environment.
+
+    cd /usr/share/backgrounds
+
+Then simply drag the new wallpapers onto the Cubic window, and click the Copy button on the Copy Page that appears.
+
+Note that the Cubic GUI currently does not support copying files over the network, but you can use the `rcp` or `scp` commands from within the terminal environment.
+
+[![The Cubic Terminal Copy Files Page][8]][8]
+
+Tip: Be sure to list the new wallpapers in an XML file under `/usr/share/gnome-background-properties`, so they will be listed in the Change Background dialog when the user right-clicks on his/her desktop.
+
+[![The Cubic Terminal Listing Copied files][9]][9]
+
+When you are done making your changes, click the Next button.  Remember, you can always come back to the terminal environment for this project to make additional customizations in the future.
+
+**The Prepare Page**
+
+On the Prepare Page, Cubic will automatically identify kernels available to boot the custom ISO, and Cubic will create manifest files based on the installed packages. You do not need to do anything on this page.
+
+[![The Cubic Prepare Page][10]][10]
+
+**The Packages Page**
+
+The Packages Page automatically appears, listing of all packages installed in your customized Linux system.  The packages with a check mark next to them are flagged to be automatically removed by the "Ubiquity live CD installer".  If you do not want Ubiquity to remove a package after installing your customized Linux system, simply un-check that package.
+
+If your installer supports both *Typical* and *Minimal* installs, you will see two columns with check boxes.  When you select a package to be removed for a *Typical* install, the package will automatically be removed for a *Minimal* install as well.
+
+If your installer does not support *Minimal* installs, you will only see one column with check boxes for a *Typical* install.
+
+Be careful when selecting packages for removal, because additional dependent packages may also be removed, and these will not be indicated in the list. Here is an example where `gparted` was selected to *not* be removed (i.e. un-checked). However, `gparted-common` is still flagged to be removed. When the installer encounters this, it will remove `gparted-common` and `gparted` will automatically be removed because it depends on `gparted-common`.
+
+Therefore, it's a good idea to just accept the recommended defaults on this page, unless you know what you are doing.
+
+[![The Cubic Packages Page][11]][11]
+
+**The Options Page**
+
+On the next page, you will see three tabs in the header bar:
+1. Kernel Tab
+2. Preseed Tab
+3. Boot Tab
+
+**The Options Page - Kernel Tab**
+
+The Kernel Tab lists all the kernels available to boot your new Live ISO, including kernels you have installed to your customized Linux system.  You can chose to use one of these as the boot kernel for your new Live ISO.  It's a good idea to accept the recommended default on this tab.
+
+*(Note: On this page you are **not** selecting the kernel that is used inside your customized Linux system, nor are you selecting the default kernel that will be installed onto a computer by your new Live ISO; instead, this is the kernel that is used to boostrap your new Live ISO).*
+
+The ISO Boot files (listed on the Boot Tab) will automatically be updated with your selected kernel files (vmlinuz and initrd). Cubic will also automatically correct file extension (initrd.lz, initrd.gz, etc.) even if the original ISO had the wrong file extension.
+
+[![The Cubic Options Page Kernel Tab][12]][12]
+
+**The Options Page - Preseed Tab**
+
+The Preseed Tab allows you to optionally create, edit, or delete Preseed files.
+
+[![The Cubic Options Page Preseed Tab][13]][13]
+
+**The Options Page - Boot Tab**
+
+The Boot Tab allows you to optionally update the boot parameters used while booting the customized Live ISO. These files are automatically updated to reflect the correct kernel files (vmlinuz and initrd). It's a good idea to accept the recommended defaults on this tab.
+
+*(Note: On this page you are **not** updating the Grub boot loader files that are used to boot your customized Linux system; instead, this is the Grub boot loader that is used to boostrap your new Live ISO).*
+
+[![The Cubic Options Page Boot Tab][14]][14]
+
+**The Compression Page**
+
+The Compression Page allows you to select the algorithm used to compress your customized Linux file system (lz4, lzo, gzip, zstd, lzma, or xz). 
+
+Algorithms listed towards the top left of the chart are faster, use less CPU resources, but produce larger files. Algorithms listed towards the bottom right of the chart are slower, use more CPU resources, but produce smaller files.
+
+For most users, it is OK to proceed with the default algorithm, gzip.
+
+[![The Cubic Compression Page][15]][15]
+
+
+**The Generate Page**
+
+Click the Next button, and Cubic will automatically package your customizations into a new `*.iso` disk image.  The progress and results of each step are shown.  Note that the "Compress the customized Linux filesystem" step may take a long time, depending on the selected algorithm and your system hardware.  (You may want to open System Monitor to track your CPU utilization during this step).
+
+At any time during this process, you can click the Back button to immediately go back to the Terminal Page, and make additional changes or customizations you may have overlooked. There is no practical size limit for the generated ISO.
+
+After generating the new customized disk image, Cubic will also generate an MD5 checksum file that can be used to verify your customized `*.iso` file.
+
+[![The Cubic Generate Page][16]][16]
+
+**The Finish Page**
+
+Click the Finish button, and information about the customized disk image will be displayed.
+
+If you want to delete all working project files (in order to save disk space) check the "Delete all project files..." checkbox. Otherwise, you will be able to continue customizing this project in the future.
+
+[![The Cubic Finish Page][17]][17]
+
+Click the Close button to exit Cubic.
+
+Finally, use your favorite disk burning program, such as [Brasero][18], to burn a copy of the `*.iso` image to CD or DVD, or use a USB image writing tool, such as [Startup Disk Creator][19] or [mkusb][20], to create a bootable USB.
+
+### Using the MD5 Checksum
+
+If you are distributing your customized Linux, the corresponding MD5 checksum file can be used to verify that it has not been altered.  For example, ensure both files are in the same directory, and type the following…
+
+    md5sum --check ubuntu-20.04.0-2021.03.04-desktop-amd64.md5
+
+    ubuntu-20.04.0-2021.03.04-desktop-amd64.iso: OK
+
+### Making Changes
+
+**The Project Page for an Existing Project**
+
+Launch Cubic, and select an existing project directory on the Start Page.  Click the Next button, and you see your Cubic project information. Simply click the Customize button in the header bar to go directly to the Terminal page to continue customizing your project to make additional changes.
+
+[![The Cubic Project Page Showing an Existing Project][21]][21]
+
+**The Delete Project Page**
+
+You can also delete an existing project by clicking the Delete button in the header bar. **All** project working files will be deleted and you will not be able to customize or make additional changes to this project.  If you do not want the generated `*.iso` image and `*.md5` files to be deleted uncheck the "Delete..." check box at the bottom of the page.
+
+[![The Cubic Delete Project Page][22]][22]
+
+
+  [1]: https://i.stack.imgur.com/Ey4sH.png
+  [2]: https://i.stack.imgur.com/oHLs5.png
+  [3]: https://i.stack.imgur.com/giBOb.png
+  [4]: https://i.stack.imgur.com/bE2sA.png
+  [5]: https://askubuntu.com/a/1014737/100356
+  [6]: https://i.stack.imgur.com/bNN85.png
+  [7]: https://i.stack.imgur.com/5tIYf.png
+  [8]: https://i.stack.imgur.com/S98Nn.png
+  [9]: https://i.stack.imgur.com/uScZR.png
+  [10]: https://i.stack.imgur.com/KZDKe.png
+  [11]: https://i.stack.imgur.com/I9ELh.png
+  [12]: https://i.stack.imgur.com/AztBl.png
+  [13]: https://i.stack.imgur.com/E2zML.png
+  [14]: https://i.stack.imgur.com/Zcr54.png
+  [15]: https://i.stack.imgur.com/4eDpT.png
+  [16]: https://i.stack.imgur.com/KEZYK.png
+  [17]: https://i.stack.imgur.com/43mm0.png
+  [18]: https://packages.ubuntu.com/groovy/brasero
+  [19]: https://packages.ubuntu.com/groovy/usb-creator-gtk
+  [20]: https://help.ubuntu.com/community/mkusb
+  [21]: https://i.stack.imgur.com/Abxym.png
+  [22]: https://i.stack.imgur.com/Il3mY.png
