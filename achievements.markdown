@@ -5,8 +5,7 @@ permalink: /achievements/
 ---
 ## Achievements, Honours and Awards
 
-- [Scholarship for Excelent Academic Performance](https://www.comunidad.madrid/sites/default/files/doc/educacion/univ/orden_becas_excelencia_2021-22_v2.pdf) awarded by the Commu-
-nity of Madrid, Spain.
+- [Scholarship for Excelent Academic Performance](https://www.comunidad.madrid/sites/default/files/doc/educacion/univ/orden_becas_excelencia_2021-22_v2.pdf) awarded by the Community of Madrid, Spain.
 
 - Honours in: [Calculus I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15489&idioma=2), [Programming](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15491&idioma=2), [Physics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18297&idioma=2), [Physics II](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18300&idioma=2), [Material Science and Engineering](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18304&idioma=2), [Quantum Physics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18306&idioma=2), [Numerical Methods](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18312&idioma=2}), [Biophysics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18309&idioma=2), [Electromagnetism and Optics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18310&idioma=2), [Production Systems and Manufacturing Technologies](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=14124&idioma=2) and [Electrical Engineering Fundamentals](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15506&idioma=2).
 
