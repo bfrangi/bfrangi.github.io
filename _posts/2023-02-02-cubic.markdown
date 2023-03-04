@@ -63,7 +63,7 @@ You are now at a stage where you can make any configurations that you want. For 
 
     apt install linux-headers-5.8.0-44-generic linux-image-5.8.0-44-generic
 
-You may click the Back button to change some of your the project parameters you entered on the Project Page.  If you quit the application, you can always open your project and continue making customizations on the Terminal Page, where you left off.
+You may click the Back button to change some of the project parameters you entered on the Project Page.  If you quit the application, you can always open your project and continue making customizations on the Terminal Page, where you left off.
 
 
 ### Replacing the kernel
