@@ -71,7 +71,7 @@ You may click the Back button to change some of the project parameters you enter
 In this section, we will replace the default *Ubuntu* kernel with the *Endless OS* kernel. To install the new kernel, run the following commands on the Cubic terminal:
    
 ```
-wget -q https://deb.endlessos.org/keys/eos-pub-archive-key.asc -O- | apt-key add -
+curl -sS https://deb.endlessos.org/keys/eos-pub-archive-key.asc | gpg --dearmor | tee /etc/apt/trusted.gpg.d/endlessOS.gpg
 
 cat > /etc/apt/preferences.d/endlessOS.pref << EOF
 Package: *
@@ -92,6 +92,19 @@ echo "deb [arch=amd64] https://deb.endlessos.org/debian master endless" | tee -a
 apt update
 apt install linux-headers-generic/master linux-image-generic/master
 ```
+Note: if you find this error:
+```
+The following packages have unmet dependencies:
+  linux-headers-6.1.0-14-generic : Depends: libssl1.1 (>= 1.1.0) but it is not installable
+```
+Then run the following commands:
+```
+echo "deb http://security.ubuntu.com/ubuntu focal-security main" | tee /etc/apt/sources.list.d/focal-security.list
+apt-get update
+apt-get install libssl1.1
+rm /etc/apt/sources.list.d/focal-security.list
+```
+
 To see the installed kernels, run the following command:
 
 ```
