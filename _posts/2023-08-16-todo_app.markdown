@@ -28,7 +28,7 @@ cd todo
 
 We can then set up our test suite by installing `rspec` and `factory_bot`. To do that, add the corresponding gems to your `Gemfile` in the development and test groups:
 
-```
+```rb
 # Gemfile
 
 group :development, :test do
