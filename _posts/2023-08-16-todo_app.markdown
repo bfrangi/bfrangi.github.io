@@ -19,7 +19,7 @@ Note: Here, we are assuming that you already have Ruby and Rails set up on your 
 
 ### Creating a rails application and installing gems
 
-So, first thing, we need to do is create a new rails application:
+So, first thing we need to do is create a new rails application:
 
 ```bash
 rails new todo
@@ -28,7 +28,7 @@ cd todo
 
 We can then set up our test suite by installing `rspec` and `factory_bot`. To do that, add the corresponding gems to your `Gemfile` in the development and test groups:
 
-```gemfile
+```
 # Gemfile
 
 group :development, :test do
