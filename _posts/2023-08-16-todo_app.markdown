@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting up a simple rails app with `rspec` and `factory_bot`"
+title:  "Setting up a simple rails app with rspec and factory_bot"
 date:   2023-08-16 09:38:59 +0100
 categories: rails
 ---
