@@ -1,0 +1,278 @@
+---
+layout: post
+title:  "Setting up a simple rails app with `rspec` and `factory_bot`"
+date:   2023-08-16 09:38:59 +0100
+categories: rails
+---
+
+<style>
+    .highlighter-rouge .highlight, code {
+       background-color: #E6E6E6;
+    }
+</style>
+
+### Introduction
+
+In this post, we are going to create a simple rails app and set it up with `rspec` and `factory_bot`. The idea is to give a basic playground that you can later use to write some tests and experiment with how useful `factory_bot` can be for that purpose. The app will be a simple 'To Do' application where we can easily keep track of our tasks. Feel free to use your own project or make up a different one to follow along with this post. Let's get right to it!
+
+Note: Here, we are assuming that you already have Ruby and Rails set up on your laptop. However, don't worry if you don't - there are many great articles on the internet (like [this](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04) one) on how to do this if you need. 
+
+### Creating a rails application and installing gems
+
+So, first thing, we need to do is create a new rails application:
+
+```bash
+rails new todo
+cd todo
+```
+
+We can then set up our test suite by installing `rspec` and `factory_bot`. To do that, add the corresponding gems to your `Gemfile` in the development and test groups:
+
+```gemfile
+# Gemfile
+
+group :development, :test do
+    ...
+    gem 'rspec-rails'
+    gem 'factory_bot_rails'
+end
+```
+
+Then, run the following commands:
+
+```bash
+bundle install
+./bin/rails g rspec:install
+```
+
+The generate command will add some files where we will be able to write our tests. For example, we will get a `spec` folder with some files in it. We will use this for all our tests, so we can remove the test folder that was created when we first initialised the rails project.
+
+Finally, we need to configure `factory_bot`. To do that, we add the following configuration to `spec/support/factory_bot.rb` (create the file if it does not exist yet): 
+
+```rb
+# spec/support/factory_bot.yml
+
+require 'factory_bot'
+
+RSpec.configure do |config|
+    config.include FactoryBot::Syntax::Methods
+end
+```
+
+And require the file in spec/rails_helper.rb:
+
+```rb
+# spec/rails_helper.yml
+
+
+...
+require "spec_help"
+require "support/factory_bot"
+...
+```
+
+### Writing app logic
+
+Cool, so now we have `factory_bot` installed in our new project. Let’s start building up our app. First, we need to create a task model and all related files:
+
+```bash
+./bin/rails generate scaffold task content:text
+```
+
+This command generates all the boilerplate code for the task model, the database migration for that model, the controller to manipulate it, views to view and manipulate the data and even a test suite. Cool, right? 
+
+As we have defined our task model, each task will simply have some plain text content. Let’s create a database for the app and run migrations:
+
+```bash
+./bin/rails db:create
+./bin/rails db:migrate
+```
+
+And let’s run the server:
+
+```bash
+./bin/rails server
+```
+
+If you now navigate to http://127.0.0.1:3000/tasks, you should see something like this:
+
+[![Tasks][1]][1]
+
+Awesome, we can now create new tasks, give them some content, see a list of all tasks, create, see a detailed view of each task, edit tasks and destroy them! So, let’s add some validation. Of course, empty tasks are no use at all, so we want to make sure that the content is not empty. To do this, we can open the file `app/models/task.rb` and change it to be the following:
+
+```rb
+# app/models/task.rb
+
+class Task < ApplicationRecord
+    validates :content, presence: true
+end
+```
+
+Awesome! One last thing we are going to do to add a bit more complexity so that we can explore all the power of factories in our tests is add authentication. We will add a user model so that each user can log in and see their own tasks, but not other user’s tasks. To handle authentication,  we will use a popular gem called devise. To add it to our project using bundler, just run:
+
+
+```bash
+bundle add devise
+./bin/rails g devise:install
+```
+
+Devise will now ask you to configure some additional settings. For this project, we can simply add the line `config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }` to the end of our `config/environments/development.rb` file:
+
+```rb
+# config/environments/development.rb
+
+    ...
+    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+end
+```
+
+And define the root url in `config/routes.rb` as:
+
+```rb
+# config/routes.rb
+
+    ...
+    root to: "tasks#index"
+end
+```
+
+Last of all, we can add the suggested bit of html to `app/views/layouts/application.html.erb`  to see the devise notices and alerts:
+
+```html
+# app/views/layouts/application.html.erb
+
+        ...
+        <body>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= yield %>
+    </body>
+</html>
+```
+
+And make sure you have the following line in your `spec/rails_helper.rb` file:
+
+```rb
+# spec/rails_helper.rb
+
+RSpec.configure do |config|
+    ...
+    # Include Devise helpers
+    config.include Devise::Test::ControllerHelpers, type: :controller
+end
+```
+
+To create a user model, run the devise generation command and run migrations:
+
+```bash
+./bin/rails g devise User
+./bin/rails db:migrate
+```
+
+Make sure you have the server running and head over to http://127.0.0.1:3000/users/sign_up, where you will be able to create a user. Great! To make things easier for users and ourselves, let’s add a nav section with log in, log out buttons, etc.:
+
+```html
+# app/views/layouts/application.html.erb
+
+        ...
+        <div>
+            <% if user_signed_in? %>
+                <%= link_to "Profile", edit_user_registration_path %>
+                <%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+            <% else %>
+                <% link_to "Sign Up", new_user_registration_path %>
+                <%= link_to "Log In", new_user_session_path %>
+            <% end %>
+        </div>
+        <%= yield %>
+    </body>
+</html>
+```
+
+And the last thing we have left to do is restrict the access to tasks so that each user can only access their own tasks. To do this, we have to establish a relation between the Task and User models:
+
+```rb
+# app/models/task.rb
+
+class Task < ApplicationRecord
+    validates :content, presence: true
+    belongs_to :user
+end
+```
+
+```rb
+# app/models/user.rb
+
+class User < ApplicationRecord
+    # Include default devise modules. Others available are:
+    # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+    devise :database_authenticatable, :registerable,
+           :recoverable, :rememberable, :validatable
+    has_many :tasks
+end
+```
+
+And we have to create a column for this association by running the commands:
+
+```bash
+./bin/rails db:reset
+./bin/rails g migration add_user_to_tasks user:references
+./bin/rails db:migrate
+```
+
+In the tasks controller, we want to force the user to log in before accessing any of the views:
+
+```rb
+# app/controllers/tasks_controller.rb
+
+class TasksController < ApplicationController
+    before_action :authenticate_user!
+    ...
+```
+
+And we need to modify the `set_task` method to only look for tasks belonging to the currently logged in user:
+
+```rb
+# app/controllers/tasks_controller.rb
+
+        ...
+        def set_task
+            @task = current_user.tasks.find(params[:id])
+        rescue ActiveRecord::RecordNotFound
+            redirect_to root_path
+        end
+        ...
+```
+
+This function is executed before the show, edit, update and destroy actions, and it will make sure that a user can only access their own tasks. The user will be redirected to the root path if they try to access a task that does not belong to them.
+
+To make sure the task is associated with the user that is creating it, we need to modify the create action:
+
+```rb
+# app/controllers/tasks_controller.rb
+
+    ...
+    def create
+        @task = Task.new(task_params)
+        @task.user = current_user
+        ...
+```
+
+And to make sure only the user’s tasks are shown in the index page, we need to change the index action:
+
+```rb
+# app/controllers/tasks_controller.rb
+
+    ...
+    def index
+        @tasks = current_user.tasks.all
+    end
+    ...
+```
+
+Sweet! We now have a basic todo app built with rails and set up with `rspec` and `factory_bot`, which we can use to write some tests and explore the power of factories!
+
+
+
+
+  [1]: https://i.stack.imgur.com/mf5ps.png
