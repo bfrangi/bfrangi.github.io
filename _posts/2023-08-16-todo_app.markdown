@@ -64,7 +64,6 @@ And require the file in spec/rails_helper.rb:
 ```rb
 # spec/rails_helper.yml
 
-
 ...
 require "spec_help"
 require "support/factory_bot"
@@ -94,7 +93,7 @@ And let’s run the server:
 ./bin/rails server
 ```
 
-If you now navigate to http://127.0.0.1:3000/tasks, you should see something like this:
+If you now navigate to `http://127.0.0.1:3000/tasks`, you should see something like this:
 
 [![Tasks][1]][1]
 
