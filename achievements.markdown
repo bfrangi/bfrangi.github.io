@@ -5,9 +5,13 @@ permalink: /achievements/
 ---
 ## Achievements, Honours and Awards
 
-- [Scholarship for Excelent Academic Performance](https://www.comunidad.madrid/sites/default/files/doc/educacion/univ/orden_becas_excelencia_2021-22_v2.pdf) awarded by the Community of Madrid, Spain.
+- [Excellence Award from the UC3M Social Council](https://www.uc3m.es/consejosocial/premios) awarded by the Carlos III University of Madrid.
+  
+- [Scholarship for Excelent Academic Performance 2022-23](https://www.comunidad.madrid/sites/default/files/doc/educacion/univ/o_2069-2016_consolidadas_bex17.pdf) awarded by the Community of Madrid, Spain.
 
-- Honours in: [Calculus I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15489&idioma=2), [Programming](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15491&idioma=2), [Physics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18297&idioma=2), [Physics II](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18300&idioma=2), [Material Science and Engineering](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18304&idioma=2), [Quantum Physics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18306&idioma=2), [Numerical Methods](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18312&idioma=2}), [Biophysics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18309&idioma=2), [Electromagnetism and Optics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18310&idioma=2), [Production Systems and Manufacturing Technologies](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=14124&idioma=2) and [Electrical Engineering Fundamentals](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15506&idioma=2).
+- [Scholarship for Excelent Academic Performance 2021-22](https://www.comunidad.madrid/sites/default/files/doc/educacion/univ/orden_becas_excelencia_2021-22_v2.pdf) awarded by the Community of Madrid, Spain.
+
+- Honours in: [Calculus I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15489&idioma=2), [Programming](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15491&idioma=2), [Physics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18297&idioma=2), [Physics II](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18300&idioma=2), [Material Science and Engineering](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18304&idioma=2), [Quantum Physics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18306&idioma=2), [Numerical Methods](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18312&idioma=2}), [Biophysics I](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18309&idioma=2), [Electromagnetism and Optics](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18310&idioma=2), [Production Systems and Manufacturing Technologies](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=14124&idioma=2), [Electrical Engineering Fundamentals](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15506&idioma=2), [Biophysics II](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18319&idioma=2), [Thermal Engineering](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18321&idioma=2), [Environmental Technologies](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=15502&idioma=2) and [Instrumentation and Measurements](https://aplicaciones.uc3m.es/cpa/generaFicha?&est=370&plan=455&asig=18322&idioma=2).
 
 - Special Mention for Excellent Performance at the [Spanish National University Access Evaluations](https://universitats.gencat.cat/ca/proves-acces-PAU-PAP/) (Score: 13.78/14).
 
@@ -21,6 +25,7 @@ permalink: /achievements/
  
 ## Courses and Certificates
 
+- Front End Developer Nanodegree (*Udacity*)
 - Git Fundamentals Course (*Alison*)
 - AGILE: Breaking Down Complexity and Transforming Corporate Culture - Course at UC3M (*Universidad Carlos III*)
 - Machine Learning Algorithms (*Great Learning Academy*)
@@ -29,5 +34,5 @@ permalink: /achievements/
 - Complete Excel Online Course: From Basics to Professional (*Udemy*)
 - 4h LaTeX Course at UC3M (*Universidad Carlos III*)
 - 30h Greek Etymology Course (*Universidad de Lleida*)
-<!--Leisure Time Monitor License-->
+- Leisure Time Monitor License (*Generalitat de Catalunya*)
  
