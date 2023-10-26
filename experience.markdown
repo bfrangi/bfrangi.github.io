@@ -15,6 +15,34 @@ permalink: /experience/
 
 # Work History
 
+**Research Assistant in Laser Technologies** (07/2023 to Present)\
+Institution: *Carlos III University, Madrid*\
+Description:
+- Built a Direct Hyper-spectral Dual Comb Imaging System for obtaining real-time evolution of the concentration of a gas in a scene.
+- Used LabVIEW to automate data acquisition.
+- Designed experiments for calibration and characterization of sensors and data acquisition systems.
+- Modeled experimental setups using Solid Edge.
+
+**Software Engineering Intern** (06/2023 to 9/2023)\
+Institution: *FreeAgent*\
+Key Achievements:
+-  Spearheaded the end-to-end development lifecycle of a vital feature within the FreeAgent app, streamlining the workflow for the development team and significantly enhancing reusability and automation. This innovation eliminated redundant code for repetitive tasks.
+- Successfully orchestrated cross-team collaboration, and led other engineers throughout the project's duration.
+
+Technical Skills:
+- Backend Development: utilized Ruby and the Ruby on Rails framework to architect and implement robust backend functionalities.
+- Frontend Expertise: Designed and crafted responsive user interfaces using HTML, CSS, and JavaScript, ensuring a seamless user experience.
+- Version Control: Managed project codebase effectively by employing Git and GitHub, and automated continuous integration and delivery (CI/CD) pipelines with GitHub Actions.
+- Cloud Integration: Leveraged Amazon Web Services (AWS) to optimize deployment processes, ensuring scalability and efficiency.
+
+Agile Team Collaboration:
+- Collaborated as a member of an Agile development team, actively participating in sprint planning and execution.
+- Crafted user stories and estimated technical tasks, contributing to the team's iterative development approach.
+
+Problem-Solving and Initiative:
+- Applied computational thinking to analyze user stories and technical tasks, evaluating various solutions and making informed decisions crucial to project success.
+- Demonstrated proactive problem-solving skills by anticipating challenges, identifying areas for improvement, and actively driving initiatives to enhance team performance and outcomes.
+
 **Django Software Developer** (06/2022 to Present)\
 Institution: *Asociación La Forja*\
 Description:
