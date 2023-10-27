@@ -4,15 +4,6 @@ title: "Experience"
 permalink: /experience/ 
 ---
 
-<style>
-    code {
-       /* background-color: #E6E6E6; */
-       background-color: white;
-       border: none;
-       padding: 0;
-    }
-</style>
-
 # Work History
 
 **Research Assistant in Laser Technologies** (07/2023 to Present)\

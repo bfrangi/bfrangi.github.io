@@ -32,9 +32,12 @@ github_username:  bfrangi
 linkedin_username: bernat-frangi-767748225 
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima@3cdd14d
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.

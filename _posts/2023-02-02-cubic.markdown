@@ -5,12 +5,6 @@ date:   2023-02-02 12:22:59 +0100
 categories: welcome
 ---
 
-<style>
-    .highlighter-rouge .highlight, code {
-       background-color: #E6E6E6;
-    }
-</style>
-
 ### Introduction
 
 Hello everyone! In this post we will learn how to use Cubic to modify any Debian-based Linux distro before even installing it on your system. You can use this method to do make many modifications of your choice. In this blog post, we will use it to replace the kernel of *Ubuntu 20.04.5 LTS* with the kernel of _EndlessOS_, which is the only kernel compatible with the _Dell Inspiron 14 7000_ Laptop.

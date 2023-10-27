@@ -4,16 +4,7 @@ title: "Projects"
 permalink: /projects/ 
 ---
 
-<style>
-    code {
-       /* background-color: #E6E6E6; */
-       background-color: white;
-       border: none;
-       padding: 0;
-    }
-</style>
-
-# Python Backtracking Maze Generator - 2022 ([GitHub](https://github.com/bfrangi/python-maze-generator))
+### Python Backtracking Maze Generator - 2022 ([GitHub](https://github.com/bfrangi/python-maze-generator))
 
 Authors: **B. Frangi**\
 Description:
@@ -21,7 +12,7 @@ Description:
 
 <br>
 
-# PyTransposer - 2022 ([GitHub](https://github.com/bfrangi/pytransposer))
+### PyTransposer - 2022 ([GitHub](https://github.com/bfrangi/pytransposer))
 
 Authors: **B. Frangi**, D. Pärsson\
 Description: 
@@ -31,7 +22,7 @@ Description:
 
 <br>
 
-# Django-Tex Syntax Highlighting Extension for VSCode - 2022 ([GitHub](https://github.com/bfrangi/vscode-django-tex))
+### Django-Tex Syntax Highlighting Extension for VSCode - 2022 ([GitHub](https://github.com/bfrangi/vscode-django-tex))
 
 Authors: **B. Frangi**\
 Description:
@@ -40,7 +31,7 @@ Description:
 
 <br>
 
-# Finite Parallel Plate Capacitor Simulation - 2022 ([GitHub](https://github.com/bfrangi/parallel-plate-capacitor))
+### Finite Parallel Plate Capacitor Simulation - 2022 ([GitHub](https://github.com/bfrangi/parallel-plate-capacitor))
 Authors: **B. Frangi**\
 Institution: *Carlos III University*\
 Description:
@@ -50,7 +41,7 @@ Description:
 
 <br>
 
-# Quantum Potential Barrier Simulation - 2021 ([GitHub](https://github.com/bfrangi/quantum-potential-barrier))
+### Quantum Potential Barrier Simulation - 2021 ([GitHub](https://github.com/bfrangi/quantum-potential-barrier))
 Authors: **B. Frangi**\
 Institution: *Carlos III University*\
 Description:
@@ -59,7 +50,7 @@ Description:
 
 <br>
 
-# Design and Building Process of a Hybrid Go-Kart: A Comparison Between Electric and Combustion Drive Systems - 2020 ([PDF](https://repositori.udl.cat/bitstream/handle/10459.1/70561/bfrangim.pdf))
+### Design and Building Process of a Hybrid Go-Kart: A Comparison Between Electric and Combustion Drive Systems - 2020 ([PDF](https://repositori.udl.cat/bitstream/handle/10459.1/70561/bfrangim.pdf))
 Authors: **B. Frangi**, A. Abad (Supervisor)\
 Institution: *Màrius Torres*\
 Description:

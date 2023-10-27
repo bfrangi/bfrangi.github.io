@@ -5,12 +5,6 @@ date:   2023-08-16 09:38:59 +0100
 categories: rails
 ---
 
-<style>
-    .highlighter-rouge .highlight, code {
-       background-color: #E6E6E6;
-    }
-</style>
-
 ### Introduction
 
 In this post, we are going to create a simple rails app and set it up with `rspec` and `factory_bot`. The idea is to give a basic playground that you can later use to write some tests and experiment with how useful `factory_bot` can be for that purpose. The app will be a simple 'To Do' application where we can easily keep track of our tasks. Feel free to use your own project or make up a different one to follow along with this post. Let's get right to it!
