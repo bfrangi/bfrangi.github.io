@@ -1,0 +1,49 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+            <li class="p-name">Bernat Frangi</li>
+            <li><a class="u-email" href="mailto:bernat.frangi@gmail.com">bernat.frangi@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+            <svg class="svg-icon blue">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <p class="feed-subscribe">
+          <a href="https://github.com/bfrangi">
+            <svg class="svg-icon blue">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#github' | relative_url }}"></use>
+            </svg><span>bfrangi</span>
+          </a>
+        </p>
+        <p class="feed-subscribe">
+          <a href="https://www.linkedin.com/in/bernat-frangi-767748225/">
+            <svg class="svg-icon blue">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#linkedin' | relative_url }}"></use>
+            </svg><span>Bernat Frangi</span>
+          </a>
+        </p>
+        <p class="feed-subscribe">
+          <a href="https://stackoverflow.com/users/15159198/clerni">
+            <svg class="svg-icon blue">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#stackoverflow' | relative_url }}"></use>
+            </svg><span>Clerni</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
