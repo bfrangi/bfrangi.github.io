@@ -7,6 +7,7 @@ permalink: /projects/
 ### Resonant Tunnelling - 2023 ([GitHub](https://github.com/bfrangi/resonant-tunnelling))
 
 Authors: **B. Frangi**\
+Institution: *Carlos III University*\
 Description:
 - Developed a simulation using `Python` to compute the transmission coefficient for an arbitrary 1D potential using the propagation matrix method.
 
@@ -15,6 +16,7 @@ Description:
 ### Landau Levels - 2023 ([GitHub](https://github.com/bfrangi/landau-levels))
 
 Authors: **B. Frangi**\
+Institution: *Carlos III University*\
 Description:
 - Developed a simulation using `Python` to compute the wave function and the density function of the `n`-th Landau level.
 
@@ -23,6 +25,7 @@ Description:
 ### Advanced Quantum Mechanics Notes - 2023 ([GitHub](https://github.com/bfrangi/advanced-quantum-mechanics-notes))
 
 Authors: **B. Frangi**\
+Institution: *Carlos III University*\
 Description:
 - Comprehensive notes from the Advanced Quantum Mechanics course taken during the Fall semester of 2023 at Carlos III University in Madrid, as part of the Engineering Physics degree program.
 
