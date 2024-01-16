@@ -8,7 +8,7 @@ permalink: /projects/
 
 Authors: **B. Frangi**\
 Description:
-- Developed a simulation of to compute the transmission coefficient for an arbitrary 1D potential using the propagation matrix method.
+- Developed a simulation using `Python` to compute the transmission coefficient for an arbitrary 1D potential using the propagation matrix method.
 
 <br>
 
@@ -16,7 +16,7 @@ Description:
 
 Authors: **B. Frangi**\
 Description:
-- Developed a simulation of to compute the wave function and the density function of the `n`-th Landau level.
+- Developed a simulation using `Python` to compute the wave function and the density function of the `n`-th Landau level.
 
 <br>
 
