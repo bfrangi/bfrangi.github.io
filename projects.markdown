@@ -4,6 +4,30 @@ title: "Projects"
 permalink: /projects/ 
 ---
 
+### Resonant Tunnelling - 2023 ([GitHub](https://github.com/bfrangi/resonant-tunnelling))
+
+Authors: **B. Frangi**\
+Description:
+- Developed a simulation of to compute the transmission coefficient for an arbitrary 1D potential using the propagation matrix method.
+
+<br>
+
+### Landau Levels - 2023 ([GitHub](https://github.com/bfrangi/landau-levels))
+
+Authors: **B. Frangi**\
+Description:
+- Developed a simulation of to compute the wave function and the density function of the `n`-th Landau level.
+
+<br>
+
+### Advanced Quantum Mechanics Notes - 2023 ([GitHub](https://github.com/bfrangi/advanced-quantum-mechanics-notes))
+
+Authors: **B. Frangi**\
+Description:
+- Comprehensive notes from the Advanced Quantum Mechanics course taken during the Fall semester of 2023 at Carlos III University in Madrid, as part of the Engineering Physics degree program.
+
+<br>
+
 ### Python Backtracking Maze Generator - 2022 ([GitHub](https://github.com/bfrangi/python-maze-generator))
 
 Authors: **B. Frangi**\
