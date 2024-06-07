@@ -268,4 +268,4 @@ Sweet! We now have a basic todo app built with rails and set up with `rspec` and
 
 
 
-  [1]: https://i.stack.imgur.com/mf5ps.png
+  [1]: https://i.sstatic.net/mf5ps.png
