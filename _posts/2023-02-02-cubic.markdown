@@ -258,25 +258,25 @@ You can also delete an existing project by clicking the Delete button in the hea
 [![The Cubic Delete Project Page][22]][22]
 
 
-  [1]: https://i.stack.imgur.com/Ey4sH.png
-  [2]: https://i.stack.imgur.com/oHLs5.png
-  [3]: https://i.stack.imgur.com/giBOb.png
-  [4]: https://i.stack.imgur.com/bE2sA.png
+  [1]: https://i.sstatic.net/Ey4sH.png
+  [2]: https://i.sstatic.net/oHLs5.png
+  [3]: https://i.sstatic.net/giBOb.png
+  [4]: https://i.sstatic.net/bE2sA.png
   [5]: https://askubuntu.com/a/1014737/100356
-  [6]: https://i.stack.imgur.com/bNN85.png
-  [7]: https://i.stack.imgur.com/5tIYf.png
-  [8]: https://i.stack.imgur.com/S98Nn.png
-  [9]: https://i.stack.imgur.com/uScZR.png
-  [10]: https://i.stack.imgur.com/KZDKe.png
-  [11]: https://i.stack.imgur.com/I9ELh.png
-  [12]: https://i.stack.imgur.com/AztBl.png
-  [13]: https://i.stack.imgur.com/E2zML.png
-  [14]: https://i.stack.imgur.com/Zcr54.png
-  [15]: https://i.stack.imgur.com/4eDpT.png
-  [16]: https://i.stack.imgur.com/KEZYK.png
-  [17]: https://i.stack.imgur.com/43mm0.png
+  [6]: https://i.sstatic.net/bNN85.png
+  [7]: https://i.sstatic.net/5tIYf.png
+  [8]: https://i.sstatic.net/S98Nn.png
+  [9]: https://i.sstatic.net/uScZR.png
+  [10]: https://i.sstatic.net/KZDKe.png
+  [11]: https://i.sstatic.net/I9ELh.png
+  [12]: https://i.sstatic.net/AztBl.png
+  [13]: https://i.sstatic.net/E2zML.png
+  [14]: https://i.sstatic.net/Zcr54.png
+  [15]: https://i.sstatic.net/4eDpT.png
+  [16]: https://i.sstatic.net/KEZYK.png
+  [17]: https://i.sstatic.net/43mm0.png
   [18]: https://packages.ubuntu.com/groovy/brasero
   [19]: https://packages.ubuntu.com/groovy/usb-creator-gtk
   [20]: https://help.ubuntu.com/community/mkusb
-  [21]: https://i.stack.imgur.com/Abxym.png
-  [22]: https://i.stack.imgur.com/Il3mY.png
+  [21]: https://i.sstatic.net/Abxym.png
+  [22]: https://i.sstatic.net/Il3mY.png
