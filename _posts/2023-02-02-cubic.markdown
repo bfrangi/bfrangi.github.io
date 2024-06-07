@@ -258,25 +258,22 @@ You can also delete an existing project by clicking the Delete button in the hea
 [![The Cubic Delete Project Page][22]][22]
 
 
-  [1]: https://i.sstatic.net/Ey4sH.png
-  [2]: https://i.sstatic.net/oHLs5.png
-  [3]: https://i.sstatic.net/giBOb.png
-  [4]: https://i.sstatic.net/bE2sA.png
-  [5]: https://askubuntu.com/a/1014737/100356
-  [6]: https://i.sstatic.net/bNN85.png
-  [7]: https://i.sstatic.net/5tIYf.png
-  [8]: https://i.sstatic.net/S98Nn.png
-  [9]: https://i.sstatic.net/uScZR.png
-  [10]: https://i.sstatic.net/KZDKe.png
-  [11]: https://i.sstatic.net/I9ELh.png
-  [12]: https://i.sstatic.net/AztBl.png
-  [13]: https://i.sstatic.net/E2zML.png
-  [14]: https://i.sstatic.net/Zcr54.png
-  [15]: https://i.sstatic.net/4eDpT.png
-  [16]: https://i.sstatic.net/KEZYK.png
-  [17]: https://i.sstatic.net/43mm0.png
+  [1]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-1.png?raw=true
+  [2]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-2.png?raw=true
+  [3]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-3.png?raw=true
+  [4]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-4.png?raw=true
+  [8]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-5.png?raw=true
+  [9]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-6.png?raw=true
+  [10]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-7.png?raw=true
+  [11]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-8.png?raw=true
+  [12]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-9.png?raw=true
+  [13]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-10.png?raw=true
+  [14]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-11.png?raw=true
+  [15]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-12.png?raw=true
+  [16]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-13.png?raw=true
+  [17]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-14.png?raw=true
   [18]: https://packages.ubuntu.com/groovy/brasero
   [19]: https://packages.ubuntu.com/groovy/usb-creator-gtk
   [20]: https://help.ubuntu.com/community/mkusb
-  [21]: https://i.sstatic.net/Abxym.png
-  [22]: https://i.sstatic.net/Il3mY.png
+  [21]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-15.png?raw=true
+  [22]: https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/cubic-16.png?raw=true
