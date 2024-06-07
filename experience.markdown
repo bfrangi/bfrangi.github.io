@@ -6,7 +6,7 @@ permalink: /experience/
 
 # Work History
 
-**Research Assistant in Laser Technologies** (07/2023 to Present)\
+**Optoelectronic Technologies Research Intern** (07/2023 to Present)\
 Institution: *Carlos III University, Madrid*\
 Description:
 - Built a Direct Hyper-spectral Dual Comb Imaging System for obtaining real-time evolution of the concentration of a gas in a scene.
