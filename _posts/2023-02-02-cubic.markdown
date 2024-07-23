@@ -20,6 +20,7 @@ Cubic (Custom Ubuntu ISO Creator) is a GUI wizard to create a customized Ubuntu 
 To install Cubic, add the PPA, and install using `apt`.
 
     sudo apt-add-repository ppa:cubic-wizard/release
+    sudo apt update
     sudo apt install cubic
 
 
@@ -65,7 +66,8 @@ You may click the Back button to change some of the project parameters you enter
 In this section, we will replace the default *Ubuntu* kernel with the *Endless OS* kernel. To install the new kernel, run the following commands on the Cubic terminal:
    
 ```
-curl -sS https://deb.endlessos.org/keys/eos-pub-archive-key.asc | gpg --dearmor | tee /etc/apt/trusted.gpg.d/endlessOS.gpg
+apt install curl
+curl -sS https://deb.endlessos.org/keys/eos-pub-archive-key.asc | sudo tee /etc/apt/trusted.gpg.d/eos-pub-archive-key.asc
 
 cat > /etc/apt/preferences.d/endlessOS.pref << EOF
 Package: *
