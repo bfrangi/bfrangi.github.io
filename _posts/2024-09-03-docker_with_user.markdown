@@ -7,7 +7,7 @@ categories: docker
 
 ### Introduction
 
-Docker is a tool that simplifies the process of managing application processes in _containers_, which are instances of _images_ (similar to _objects_, which are instances of _classes_). Containers they let you run your applications in resource-isolated processes. They’re similar to virtual machines, but containers are more portable, more resource-friendly, and more dependent on the host operating system [[1]]. In this post, we will set up an Ubuntu Docker container with a new user. This is helpful in situations where you need to restrict the container user's permissions, enhancing security and preventing accidental damage to the system. We'll start by installing `docker`.
+Docker is a tool that simplifies the process of managing application processes in _containers_, which are instances of _images_ (similar to _objects_, which are instances of _classes_). Containers let you run your applications in resource-isolated processes. They’re similar to virtual machines, but containers are more portable, more resource-friendly, and more dependent on the host operating system [[1]]. In this post, we will set up an Ubuntu Docker container with a new user. This is helpful in situations where you need to restrict the container user's permissions, enhancing security and preventing accidental damage to the system. We'll start by installing `docker`.
 
 ### `docker` installation
 
