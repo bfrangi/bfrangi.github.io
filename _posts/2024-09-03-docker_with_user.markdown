@@ -68,7 +68,7 @@ Your command prompt will change to indicate that you are now inside the containe
 root@d9b100f2f636:/#
 ```
 
-The number after the `@` is the container ID. Remember this container ID, as you'll need it later to identify the container and, for example, remove it. 
+The identifier after the `@` is the container ID. Remember this container ID, as you'll need it later to identify the container and, for example, remove it. 
 
 ### Creating a new user
 
@@ -101,6 +101,8 @@ You will be prompted to type the password twice. You can then login to the new u
 ```bash
 su - john
 ```
+
+Done!
 
 
 
