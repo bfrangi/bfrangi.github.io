@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up Ubuntu Docker container with a new user"
 date:   2024-09-03 10:25:59 +0100
-categories: rails
+categories: docker
 ---
 
 ### Introduction
