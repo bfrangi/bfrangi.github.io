@@ -9,7 +9,7 @@ categories: docker
 
 Docker is a tool that simplifies the process of managing application processes in _containers_, which are instances of _images_ (similar to _objects_, which are instances of _classes_). Containers let you run your applications in resource-isolated processes. They’re similar to virtual machines, but containers are more portable, more resource-friendly, and more dependent on the host operating system [[1]]. In this post, we will set up an Ubuntu Docker container with a new user. This is helpful in situations where you need to restrict the container user's permissions, enhancing security and preventing accidental damage to the system. We'll start by installing `docker`.
 
-### `docker` installation
+### Install `docker`
 
 Before installing `docker`, we need to install a few dependencies:
 
@@ -70,7 +70,7 @@ root@d9b100f2f636:/#
 
 The identifier after the `@` is the container ID. Remember this container ID, as you'll need it later to identify the container and, for example, remove it. 
 
-### Creating a new user
+### Create a new user
 
 You can now run any command within the container, but the current user is `root`, which poses many security risks. To mitigate these risks, let's create a new user with restricted permissions. Start by running the following command (change the username `john` to whatever you prefer):
 
@@ -96,7 +96,23 @@ Set a password for the user:
 passwd john
 ```
 
-You will be prompted to type the password twice. You can then login to the new user with the command:
+You will be prompted to type the password twice and that's it, your user is created!
+
+### Install `sudo`
+
+Before logging in to the new user, it is a good idea to install `sudo`, as this will enable you to execute commands that require root privileges from the newly created user using the password you just created. To install `sudo`, run:
+
+```bash
+apt update && apt install sudo -y
+```
+
+We then need to add the user to the sudoers group. To do that, we also need to install `adduser`:
+
+```bash
+apt install adduser && adduser john sudo
+```
+
+You can then login to the new user with the command:
 
 ```bash
 su - john
