@@ -2,7 +2,7 @@
 layout: post
 title:  "The Qubit: Interpreting the Bloch Sphere"
 date:   2024-09-22 09:28:59 +0100
-categories: quantum physics computing
+categories: [quantum, physics, computing]
 ---
 
 ### Introduction
