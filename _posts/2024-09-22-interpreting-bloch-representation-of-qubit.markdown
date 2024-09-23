@@ -26,8 +26,7 @@ By understanding the Bloch Sphere, one gains valuable insights into the nature o
 A qubit is the quantum equivalent of the classical bit. It is a quantum system that has two possible states, just like the classical bit. The difference between them is the fact that a qubit does not need to be in one of those two states, but it can also be in a superposition of the two. Physically, it can be modelled as a two-level system, with a state \\(\mid0\;\rangle\\) and a state \\(\mid1\;\rangle\\). Therefore, the state of a qubit can be written as:
 
 \\[
-\mid\psi\;
-angle = c_0 \mid0\;\rangle + c_1 \mid1\;\rangle
+\mid\psi\;\rangle = c_0 \mid0\;\rangle + c_1 \mid1\;\rangle
 \\]
 
 If this was a classical bit, we would only allow \\(c_0\\) and \\(c_1\\) the values \\(0\\) or \\(1\\), where exactly one of the two would need to be equal to \\(1\\) and the other to \\(0\\). In quantum computing, however, these two variables can take any pair of complex values \\(c_0\\) and \\(c_1\\) that fulfil \\(\mid c_0\mid^2 + \mid c_1\mid^2 = 1\\). If both \\(c_0\\) and \\(c_1\\) are different from zero, the qubit is said to be in superposition.
@@ -42,7 +41,7 @@ Luckily, in quantum computing, and in quantum mechanics in general, there is one
 
 But, let's not get ahead of ourselves; back to representing. Imagine a 2D system of cartesian coordinates, with axes named \\(\chi\\) and \\(\upsilon\\) (see image below), and forget for a minute the relative phase difference. Take now \\(\mid1\;\rangle\\) as the unit vector in the \\(\chi\\)-axis and \\(\mid0\;\rangle\\) as the unit vector of the \\(\upsilon\\)-axis. The components in this system of coordinates are the magnitudes of \\(c_0\\) and \\(c_1\\). It is clear that, since \\(\mid c_0\mid^2 + \mid c_1\mid^2 = 1\\), the possible states of the qubit will be held inside the circumference of radius \\(1\\) centered at the origin.
 
-<div style="max-width: 300px; margin: 0 auto;">
+<div style="max-width: 300px; margin: 10px auto;">
   <a href="https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/qubit-1.png?raw=true">
     <img src="https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/qubit-1.png?raw=true" alt="2D Representation of a Qubit">
   </a>
@@ -52,7 +51,7 @@ But, let's not get ahead of ourselves; back to representing. Imagine a 2D system
 
 How do we now introduce the phase difference into this representation? Well, there is one particular thing about phase, which is that it is contained inside a finite interval of values. Specifically, \\(\phi \in[0, 2\pi]\\). This means that it is quite convenient to represent the third "dimension" of the qubit representation as an angle of rotation about some axis. The best way to do this in an intuitive way is to "open up" the \\(\chi\\) and \\(\upsilon\\) axes that we already constructed so that they make an angle of \\(180º\\) between them, instead of \\(90º\\), so that they merge to form a new axis that we name \\(z\\)-axis. 
 
-<div style="max-width: 600px; margin: 0 auto;">
+<div style="max-width: 600px; margin: 10px auto;">
   <a href="https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/qubit-2.png?raw=true">
     <img src="https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/qubit-2.png?raw=true" alt="Bloch Sphere">
   </a>
