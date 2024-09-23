@@ -23,10 +23,11 @@ By understanding the Bloch Sphere, one gains valuable insights into the nature o
 
 ### What is a qubit?
 
-A qubit is the quantum equivalent of the classical bit. It is a quantum system that has two possible states, just like the classical bit. The difference between them is the fact that a qubit does not need to be in one of those two states, but it can also be in a superposition of the two. Physically, it can be modelled as a two-level system, with a state \\(\mid0\rangle\\) and a state \\(\mid1\rangle\\). Therefore, the state of a qubit can be written as:
+A qubit is the quantum equivalent of the classical bit. It is a quantum system that has two possible states, just like the classical bit. The difference between them is the fact that a qubit does not need to be in one of those two states, but it can also be in a superposition of the two. Physically, it can be modelled as a two-level system, with a state \\(\mid0\;\rangle\\) and a state \\(\mid1\;\rangle\\). Therefore, the state of a qubit can be written as:
 
 \\[
-\mid\psi\rangle = c_0 \mid0\rangle + c_1 \mid1\rangle
+\mid\psi\;
+angle = c_0 \mid0\;\rangle + c_1 \mid1\;\rangle
 \\]
 
 If this was a classical bit, we would only allow \\(c_0\\) and \\(c_1\\) the values \\(0\\) or \\(1\\), where exactly one of the two would need to be equal to \\(1\\) and the other to \\(0\\). In quantum computing, however, these two variables can take any pair of complex values \\(c_0\\) and \\(c_1\\) that fulfil \\(\mid c_0\mid^2 + \mid c_1\mid^2 = 1\\). If both \\(c_0\\) and \\(c_1\\) are different from zero, the qubit is said to be in superposition.
@@ -39,7 +40,7 @@ This, however, is not the case for a qubit. Even if we know the value of \\(c_0\
 
 Luckily, in quantum computing, and in quantum mechanics in general, there is one important thing that will reduce the four parameters to three, and it is the fact that global phases do not matter. There is no possible way to measure the global phase of anything, and in fact it has no physical significance. So, instead of keeping track of the absolute phases of \\(c_0\\) and \\(c_1\\), we can simply assume \\(c_0\\) to be real and track only the relative phase \\(\phi\\) between \\(c_0\\) and \\(c_1\\), assigning it to \\(c_1\\). Further on, we will see that we can reduce the three parameters that we need in order to characterize a bit down to only two parameters, through the property \\(\mid c_0\mid^2 + \mid c_1\mid^2 = 1\\).
 
-But, let's not get ahead of ourselves; back to representing. Imagine a 2D system of cartesian coordinates, with axes named \\(\chi\\) and \\(\upsilon\\) (see image below), and forget for a minute the relative phase difference. Take now \\(\mid1\rangle\\) as the unit vector in the \\(\chi\\)-axis and \\(\mid0\rangle\\) as the unit vector of the \\(\upsilon\\)-axis. The components in this system of coordinates are the magnitudes of \\(c_0\\) and \\(c_1\\). It is clear that, since \\(\mid c_0\mid^2 + \mid c_1\mid^2 = 1\\), the possible states of the qubit will be held inside the circumference of radius \\(1\\) centered at the origin.
+But, let's not get ahead of ourselves; back to representing. Imagine a 2D system of cartesian coordinates, with axes named \\(\chi\\) and \\(\upsilon\\) (see image below), and forget for a minute the relative phase difference. Take now \\(\mid1\;\rangle\\) as the unit vector in the \\(\chi\\)-axis and \\(\mid0\;\rangle\\) as the unit vector of the \\(\upsilon\\)-axis. The components in this system of coordinates are the magnitudes of \\(c_0\\) and \\(c_1\\). It is clear that, since \\(\mid c_0\mid^2 + \mid c_1\mid^2 = 1\\), the possible states of the qubit will be held inside the circumference of radius \\(1\\) centered at the origin.
 
 <div style="max-width: 300px; margin: 0 auto;">
   <a href="https://github.com/bfrangi/bfrangi.github.io/blob/master/assets/images/qubit-1.png?raw=true">
@@ -47,7 +48,7 @@ But, let's not get ahead of ourselves; back to representing. Imagine a 2D system
   </a>
 </div>
 
-*Figure 1: 2D representation of a qubit state, showing the relationship between \\(\mid0\rangle\\), \\(\mid1\rangle\\), and the coefficients \\(c_0\\) and \\(c_1\\).*
+*Figure 1: 2D representation of a qubit state, showing the relationship between \\(\mid0\;\rangle\\), \\(\mid1\;\rangle\\), and the coefficients \\(c_0\\) and \\(c_1\\).*
 
 How do we now introduce the phase difference into this representation? Well, there is one particular thing about phase, which is that it is contained inside a finite interval of values. Specifically, \\(\phi \in[0, 2\pi]\\). This means that it is quite convenient to represent the third "dimension" of the qubit representation as an angle of rotation about some axis. The best way to do this in an intuitive way is to "open up" the \\(\chi\\) and \\(\upsilon\\) axes that we already constructed so that they make an angle of \\(180º\\) between them, instead of \\(90º\\), so that they merge to form a new axis that we name \\(z\\)-axis. 
 
@@ -59,7 +60,7 @@ How do we now introduce the phase difference into this representation? Well, the
 
 *Figure 2: Opening up the \\(\chi\\) and the \\(\upsilon\\) axes to form the new \\(z\\)-axis (left) and completing the Bloch Sphere representation of the qubit (right).*
 
-In this way, the unit vectors that were previously perpendicular (\\(\mid0\rangle\\) and \\(\mid1\rangle\\)) are now parallel and pointing in opposite directions. Then, \\(\phi\\) can be represented as an angle of rotation about the new \\(z\\)-axis. The 2D circumference that contained the valid qubit states is now expanded into a 3D sphere of radius \\(1\\). Any qubit state can be now characterised by its position on the Bloch Sphere, which we define with the variables \\(\phi\\) and \\(\theta\\). Here, \\(\theta\\) represents the polar angle from the positive \\(z\\)-axis, and \\(\phi\\) represents the azimuthal angle in the \\(x\\)-\\(y\\) plane from the \\(x\\)-axis. We now only need two parameters to define a qubit!
+In this way, the unit vectors that were previously perpendicular (\\(\mid0\;\rangle\\) and \\(\mid1\;\rangle\\)) are now parallel and pointing in opposite directions. Then, \\(\phi\\) can be represented as an angle of rotation about the new \\(z\\)-axis. The 2D circumference that contained the valid qubit states is now expanded into a 3D sphere of radius \\(1\\). Any qubit state can be now characterised by its position on the Bloch Sphere, which we define with the variables \\(\phi\\) and \\(\theta\\). Here, \\(\theta\\) represents the polar angle from the positive \\(z\\)-axis, and \\(\phi\\) represents the azimuthal angle in the \\(x\\)-\\(y\\) plane from the \\(x\\)-axis. We now only need two parameters to define a qubit!
 
 It is important to note that, in this representation, \\(\theta\\) is actually twice the real angle of the original 2D representation that we presented. Therefore, the coefficients \\(c_0\\) and \\(c_1\\) need to be computed taking \\(\theta/2\\) instead of \\(\theta\\). Given the angles \\(\theta\\) and \\(\phi\\) on the Bloch sphere, we can obtain the coefficients \\(c_0\\) and \\(c_1\\) using the following formulas:
 
@@ -78,12 +79,12 @@ In summary, the Bloch sphere is a powerful visualization tool for representing t
 1. A qubit is a quantum system with two possible states, analogous to a classical bit.
 2. Unlike classical bits, qubits can exist in superposition, represented by complex coefficients \\(c_0\\) and \\(c_1\\).
 3. The Bloch sphere is a 3D representation of a qubit's state, where:
-   - The north pole represents \\(\mid0\rangle\\).
-   - The south pole represents \\(\mid1\rangle\\).
+   - The north pole represents \\(\mid0\;\rangle\\).
+   - The south pole represents \\(\mid1\;\rangle\\).
    - Any point on the surface represents a valid qubit state.
 4. The state of a qubit on the Bloch sphere is defined by two angles:
-   - \\(\theta\\) (theta): the polar angle from the positive \\(z\\)-axis (\\(0 \leq \theta \leq \pi\\)). This angle determines the probability amplitudes of measuring the qubit in the \\(\mid0\rangle\\) or \\(\mid1\rangle\\) state. When \\(\theta = 0\\), the qubit is in the \\(\mid0\rangle\\) state, and when \\(\theta = \pi\\), it's in the \\(\mid1\rangle\\) state. For values in between, the qubit is in a superposition of \\(\mid0\rangle\\) and \\(\mid1\rangle\\), with the exact probabilities given by \\(\cos^2(\theta/2)\\) for \\(\mid0\rangle\\) and \\(\sin^2(\theta/2)\\) for \\(\mid1\rangle\\).
-   - \\(\phi\\) (phi): the azimuthal angle in the \\(x\\)-\\(y\\) plane (\\(0 \leq \phi < 2\pi\\)). This angle represents the phase difference between the \\(\mid0\rangle\\) and \\(\mid1\rangle\\) components of the qubit state. Physically, it corresponds to the rotation of the qubit state around the z-axis of the Bloch sphere. Different values of \\(\phi\\) lead to different quantum interference effects, which are crucial in many quantum algorithms and protocols.
+   - \\(\theta\\) (theta): the polar angle from the positive \\(z\\)-axis (\\(0 \leq \theta \leq \pi\\)). This angle determines the probability amplitudes of measuring the qubit in the \\(\mid0\;\rangle\\) or \\(\mid1\;\rangle\\) state. When \\(\theta = 0\\), the qubit is in the \\(\mid0\;\rangle\\) state, and when \\(\theta = \pi\\), it's in the \\(\mid1\;\rangle\\) state. For values in between, the qubit is in a superposition of \\(\mid0\;\rangle\\) and \\(\mid1\;\rangle\\), with the exact probabilities given by \\(\cos^2(\theta/2)\\) for \\(\mid0\;\rangle\\) and \\(\sin^2(\theta/2)\\) for \\(\mid1\;\rangle\\).
+   - \\(\phi\\) (phi): the azimuthal angle in the \\(x\\)-\\(y\\) plane (\\(0 \leq \phi < 2\pi\\)). This angle represents the phase difference between the \\(\mid0\;\rangle\\) and \\(\mid1\;\rangle\\) components of the qubit state. Physically, it corresponds to the rotation of the qubit state around the z-axis of the Bloch sphere. Different values of \\(\phi\\) lead to different quantum interference effects, which are crucial in many quantum algorithms and protocols.
 5. The relationship between the Bloch sphere coordinates and the qubit coefficients is:
 
    \\[
