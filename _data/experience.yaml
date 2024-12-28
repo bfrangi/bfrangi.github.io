@@ -1,3 +1,15 @@
+- company: "Radian Systems"
+  role: "Software Engineer"
+  location: "Madrid (Remote)"
+  start_date: "09/2024"
+  end_date: "Present"
+  description: "Description:\n
+  - Enhanced the radiation capabilities of the core thermal simulation engine in _Radian_ by implementing advanced functionalities.\n
+  - Utilized containerized infrastructure using `Docker` to improve sandboxing and ensure a robust development environment.\n
+  - Developed and integrated new models for calculating and correcting view factors in radiative simulations involving multiple nodes per surface, improving accuracy and reliability.\n
+  - Conducted comprehensive testing of newly implemented features to ensure optimal performance and adherence to requirements.\n
+  - Identified, debugged, and resolved critical issues in the codebase, contributing to overall system stability."
+
 - company: "Carlos III University"
   role: "Intern Researcher in Laser Technologies for Characterization of Gases"
   location: "Madrid"
