@@ -72,3 +72,37 @@ p {
   margin: 0;
   margin-bottom: 50px;
 }
+
+.about-me-title {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title image";
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 2.625rem;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      grid-area: title;
+      margin: 0;
+    }
+  }
+
+  .image {
+    grid-area: image;
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-me-title {
+    grid-template-columns: 1fr 100px;
+  }
+}

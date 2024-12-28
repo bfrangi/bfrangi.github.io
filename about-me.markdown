@@ -1,21 +1,13 @@
 ---
-layout: page
+layout: about-me
 title: "About Me"
 permalink: /about-me/ 
 ---
-<div style="display:inline-block;">
-<h2>
-Bernat Frangi Mahiques
-</h2>
-</div>
-<div style="display:inline-block;vertical-align:bottom; padding-left:30px; float: right">
-<img src="https://avatars.githubusercontent.com/u/82199014?v=4" height="auto" width="150" style="border-radius:50%">
-</div>
 
 
 
 # Background
-*Fourth Year Undergraduate Student at the Carlos III University in Madrid [Dual Bachelor in Engineering Physics and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial)*
+*Fifth Year Undergraduate Student at the Carlos III University in Madrid [Dual Bachelor in Engineering Physics and Industrial Technologies Engineering](https://www.uc3m.es/bachelor-degree/physics-industrial)*.
 
 I was born in *Zaragoza*, Spain, but my life has been a journey through various places in both *Spain* (including *Barcelona*, *Lleida*, and *Madrid*) and *England* (including *Sheffield*, *Chesterfield*, and *Leeds*). At the age of 9, my family relocated to the UK, exposing me to a new culture and language. This experience honed my adaptability and ability to collaborate with diverse individuals. I became proficient in English, feeling as comfortable as a native speaker.
 
