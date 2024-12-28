@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {% for job in site.data.experience %}
+  <div class="work-experience-title">
+    <div class="marker"></div>
+    <div class="title">
+      <h2 class="post-title">
+        {{- job.role | escape -}}
+        <span class="post-insitution"> - {{ job.company | escape -}}</span>
+      </h2>
+      <p class="post-dates">
+        {{- job.start_date | escape }} to {{ job.end_date | escape -}}
+      </p>
+    </div>
+  </div>
+  <div class="work-experience-description">
+    {{ job.description | escape | markdownify }}
+  </div>
+  {% endfor %}
+</article>

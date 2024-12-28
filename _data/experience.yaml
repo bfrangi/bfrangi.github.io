@@ -1,0 +1,61 @@
+- company: "Carlos III University"
+  role: "Intern Researcher in Laser Technologies for Characterization of Gases"
+  location: "Madrid"
+  start_date: "07/2023"
+  end_date: "Present"
+  description: "Description:\n
+- Built a Direct Hyper-spectral Dual Comb Imaging System for obtaining real-time evolution of the concentration of a gas in a scene.\n
+- Used LabVIEW to automate data acquisition.\n
+- Designed experiments for calibration and characterization of sensors and data acquisition systems.\n
+- Modeled experimental setups using Solid Edge."
+
+- company: "FreeAgent"
+  role: "Software Engineering Intern"
+  location: "Edinburgh (Remote)"
+  start_date: "06/2023"
+  end_date: "9/2023"
+  description: "Key Achievements:\n
+-  Spearheaded the end-to-end development lifecycle of a vital feature within the _FreeAgent_ app, streamlining the workflow for the development team and significantly enhancing reusability and automation. This innovation eliminated redundant code for repetitive tasks.\n
+- Successfully orchestrated cross-team collaboration, and led other engineers throughout the project's duration.\n
+
+Technical Skills:\n
+- **Backend Development**: utilized _Ruby_ and the _Ruby on Rails_ framework to architect and implement robust backend functionalities.\n
+- **Frontend Expertise**: Designed and crafted responsive user interfaces using `HTML`, `CSS`, and `JavaScript`, ensuring a seamless user experience.\n
+- **Version Control**: Managed project codebase effectively by employing `Git` and _GitHub_, and automated continuous integration and delivery (CI/CD) pipelines with _GitHub Actions_.\n
+- **Cloud Integration**: Leveraged _Amazon Web Services_ (AWS) to optimize deployment processes, ensuring scalability and efficiency.\n
+
+Agile Team Collaboration:\n
+- Collaborated as a member of an _Agile_ development team, actively participating in sprint planning and execution.\n
+- Crafted user stories and estimated technical tasks, contributing to the team's iterative development approach.\n
+
+Problem-Solving and Initiative:\n
+- Applied computational thinking to analyze user stories and technical tasks, evaluating various solutions and making informed decisions crucial to project success.\n
+- Demonstrated proactive problem-solving skills by anticipating challenges, identifying areas for improvement, and actively driving initiatives to enhance team performance and outcomes."
+
+- company: "Asociación La Forja"
+  role: "Django Software Developer"
+  location: "Madrid and Leeds (Remote)"
+  start_date: "06/2022"
+  end_date: "05/2023"
+  description: "Description:\n
+- Developed scalable web applications using `Django` and `Python`.\n
+- Created responsive user interfaces with `HTML`, `CSS` and `JavaScript`.\n
+- Managed large databases using `SQLite`.\n
+- Used critical thinking to break down problems, evaluate solutions and make critical and informed decisions.\n
+- Gathered customer requirements to develop clear specifications for project plans.\n
+- Developed all stages of software development lifecycle from requirement gathering to production releases.\n
+- Used version control through `Git` and *GitHub* to maintain and manage the project codebase."
+
+- company: "Crimple Ltd."
+  role: "Restaurant Waiter"
+  location: "Harrogate"
+  start_date: "07/2022"
+  end_date: "09/2022"
+  description: "Description:\n
+- Delivered first-rate customer service, adapted to the need of the particular customer.\n
+- Effectively promoted and upsold specials and other selected menu items to achieve sales targets and reduce waste.\n
+- Excelled in a challenging, high-volume environment, regularly attending to 80+ covers during busy shifts.\n
+- Managed closing duties diligently to ensure a smooth start of the following shift.\n
+- Performed foodservice duties during special events, adapting easily to different situations and environments.\n
+- Efficiently led, worked with and trained a team of younger waiters during a number of shifts.\n
+- Cultivated warm relationships with regular customers."
