@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {% for project in site.data.projects %}
+  <div class="project-title">
+    <div class="marker"></div>
+    <div class="title">
+      <h2 class="title-text">
+        {{- project.title | escape -}}
+        {% if project.link %}
+          <a class="link-badge" href="{{- project.link | escape -}}" target="_blank">
+            {{- project.link_text | escape -}}
+          </a>
+        {% endif %}
+      </h2>
+      <p class="project-authors">
+        {{- project.authors | escape -}}.
+        <span class="project-date">
+          {% if project.institution %}
+          {{- project.institution | escape -}}, 
+          {% endif %}
+          {{- project.date | escape -}}.
+        </span>
+      </p>
+      {% if project.doi %}
+        <a class="link-badge doi-badge" href="https://doi.org/{{- project.doi | escape -}}" target="_blank">
+          <span class="doi-label">DOI</span>
+          {{- project.doi | escape -}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="project-description">
+    {{- project.description | escape | markdownify -}}
+  </div>
+  {% endfor %}
+</article>

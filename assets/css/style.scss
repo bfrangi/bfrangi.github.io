@@ -106,3 +106,88 @@ p {
     grid-template-columns: 1fr 100px;
   }
 }
+
+.project-title {
+  display: grid;
+  grid-template-columns: 30px 10px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "marker separator title";
+  margin: 0;
+  margin-bottom: 20px;
+
+  .marker {
+    grid-area: marker;
+    background-color: #969696;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .title {
+    grid-area: title;
+    margin: 0;
+
+    .title-text {
+      font-size: 1.3em;
+      line-height: 1.3em;
+      font-weight: bold;
+      margin: 0;
+      margin-bottom: 5px;
+
+    }
+
+    .link-badge {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: normal;
+      background-color: #bbbbbb;
+      padding: 0px 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #181818;
+      margin: 0;
+      margin-left: 5px;
+    }
+
+    .link-badge:hover {
+      background-color: #969696;
+    }
+
+    .doi-badge {
+      .doi-label {
+        background-color: #404040;
+        padding: 0px 5px;
+        border-radius: 5px 0px 0px 5px;
+        color: white;
+        margin: 0;
+        margin-right: 5px;
+      }
+
+      padding: 0px;
+      padding-right: 5px;
+      border-radius: 10px 5px 5px 10px;
+      margin-left: 0px;
+    }
+
+    .project-date {
+      font-size: 1em;
+      color: gray;
+      font-weight: lighter;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    .project-authors {
+      font-size: 1em;
+      font-weight: lighter;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.project-description {
+  margin: 0;
+  margin-bottom: 50px;
+}

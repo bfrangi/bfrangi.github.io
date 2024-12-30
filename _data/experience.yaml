@@ -31,7 +31,7 @@
 - Successfully orchestrated cross-team collaboration, and led other engineers throughout the project's duration.\n
 
 Technical Skills:\n
-- **Backend Development**: utilized _Ruby_ and the _Ruby on Rails_ framework to architect and implement robust backend functionalities.\n
+- **Backend Development**: utilized `Ruby` and the `Ruby on Rails` framework to architect and implement robust backend functionalities.\n
 - **Frontend Expertise**: Designed and crafted responsive user interfaces using `HTML`, `CSS`, and `JavaScript`, ensuring a seamless user experience.\n
 - **Version Control**: Managed project codebase effectively by employing `Git` and _GitHub_, and automated continuous integration and delivery (CI/CD) pipelines with _GitHub Actions_.\n
 - **Cloud Integration**: Leveraged _Amazon Web Services_ (AWS) to optimize deployment processes, ensuring scalability and efficiency.\n

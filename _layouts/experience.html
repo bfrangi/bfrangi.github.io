@@ -21,7 +21,7 @@ layout: default
     </div>
   </div>
   <div class="work-experience-description">
-    {{ job.description | escape | markdownify }}
+    {{- job.description | escape | markdownify -}}
   </div>
   {% endfor %}
 </article>
