@@ -13,11 +13,6 @@ layout: default
     <div class="title">
       <h2 class="title-text">
         {{- project.title | escape -}}
-        {% if project.link %}
-          <a class="link-badge" href="{{- project.link | escape -}}" target="_blank">
-            {{- project.link_text | escape -}}
-          </a>
-        {% endif %}
       </h2>
       <p class="project-authors">
         {{- project.authors | escape -}}.
@@ -29,10 +24,15 @@ layout: default
         </span>
       </p>
       {% if project.doi %}
-        <a class="link-badge doi-badge" href="https://doi.org/{{- project.doi | escape -}}" target="_blank">
-          <span class="doi-label">DOI</span>
-          {{- project.doi | escape -}}
-        </a>
+      <a class="link-badge doi-badge" href="https://doi.org/{{- project.doi | escape -}}" target="_blank">
+        <span class="doi-label">DOI</span>
+        {{- project.doi | escape -}}
+      </a>
+      {% endif %}
+      {% if project.link %}
+      <a class="link-badge" href="{{- project.link | escape -}}" target="_blank">
+        {{- project.link_text | escape -}}
+      </a>
       {% endif %}
     </div>
   </div>

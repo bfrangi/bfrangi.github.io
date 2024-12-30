@@ -1,19 +1,30 @@
-- title: "Resonant Tunnelling"
+- title: "Transcriptomic Analysis of the Response of hiPSC-derived Cardiac Progenitors to Microgravity"
+  date: "2023"
+  institution: "Carlos III University"
+  authors: "B. Frangi, M. Martín-Romo, R. Cervera, L. Grau"
+  doi: "10.5281/zenodo.14567570"
+  description: "Description:\n
+  - Analyzed gene transcription data for an experiment using *hiPSC-derived Cardiac Progenitors* in different gravity conditions, including *microgravity* in the *International Space Station* (ISS).\n
+  - Found that *space microgravity* can enhance the growth and proliferation of *hiPSC-cardiomyocytes*.\n
+  - Produced a *preprint* and a *scientific poster* with the findings."
+
+- title: "Study of the Transmission Coefficient of a General Double Barrier"
   date: "2023"
   institution: "Carlos III University"
   authors: "B. Frangi"
   link_text: "GitHub"
   link: "https://github.com/bfrangi/resonant-tunnelling"
+  doi: "10.5281/zenodo.14575814"
   description: "Description:\n
   - Developed a simulation using `Python` to compute the transmission coefficient for an arbitrary 1D potential using the propagation matrix method."
 
-- title: "Landau Levels Simulator"
+- title: "Numerical Simulation of Landau Levels"
   date: "2023"
   institution: "Carlos III University"
   authors: "B. Frangi"
   link_text: "GitHub"
   link: "https://github.com/bfrangi/landau-levels"
-  doi: "10.5281/zenodo.14571954"
+  doi: "10.5281/zenodo.14568540"
   description: "Description:\n
   - Developed a simulation using `Python` to compute the wave function and the density function of the `n`-th Landau level."
 
@@ -54,7 +65,7 @@
   - Created a *VSCode Extension* for syntax highlighting in `django-tex` templates.\n
   - Published the extension on the [*Visual Studio Marketplace*](https://marketplace.visualstudio.com/items?itemName=bfrangi.vscode-django-tex) and on [*Open VSX*](https://open-vsx.org/extension/bfrangi/vscode-django-tex)."
 
-- title: "Finite Parallel Plate Capacitor Simulation"
+- title: "Simulation of the Potential of a Finite Parallel Plate Capacitor"
   date: "2022"
   institution: "Carlos III University"
   authors: "B. Frangi"
@@ -66,11 +77,12 @@
   - Modelled complex physical and mathematical problems in an simple and efficient way.\n
   - Optimised the `Python` code to improve performance."
 
-- title: "Quantum Potential Barrier Simulation"
+- title: "Simulating the Collision of an Electron with a Finite Quantum Potential Square Barrier"
   date: "2021"
   institution: "Carlos III University"
   authors: "B. Frangi"
   link_text: "GitHub"
+  doi: "10.5281/zenodo.14576743"
   link: "https://github.com/bfrangi/quantum-potential-barrier"
   description: "Description:\n
   - Simulated the collision of a Gaussian wave packet with a square potential barrier using `Python`.\n
@@ -78,7 +90,7 @@
 
 - title: "Design and Building Process of a Hybrid Go-Kart: A Comparison Between Electric and Combustion Drive Systems"
   date: "2020"
-  institution: "IES Màrius Torres"
+  institution: "Ins. Màrius Torres"
   authors: "B. Frangi, A. Abad (supervisor)"
   link_text: "PDF"
   link: "https://repositori.udl.cat/bitstream/handle/10459.1/70561/bfrangim.pdf"
@@ -90,5 +102,4 @@
 Awards: 
 
   - First Prize at [Premi a Treballs de Recerca](https://www.udl.cat/ca/serveis/seu/treballsrecerca/) for High School Research Project in Engineering from the *Universitat de Lleida*.\n
-  - First Prize at the [Premi Argo](https://www.uab.cat/web/programa-argo/programa-argo-estudiants/estudiants/convocatoria-1345719279744.html) for High School Research Project in Engineering from the *Universitat Autònoma de Barcelona*."
-  
+  - First Prize at the [Premi Argo](https://www.uab.cat/ca/ice/premi-argo) for High School Research Project in Engineering from the *Universitat Autònoma de Barcelona*."

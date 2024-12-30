@@ -16,7 +16,7 @@ layout: default
         <span class="post-insitution"> - {{ job.company | escape -}}</span>
       </h2>
       <p class="post-dates">
-        {{- job.start_date | escape }} to {{ job.end_date | escape -}}
+        {{- job.start_date | escape }} to {{ job.end_date | escape -}}, {{ job.location | escape -}}.
       </p>
     </div>
   </div>
