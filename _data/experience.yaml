@@ -3,7 +3,8 @@
   location: "Madrid (Remote)"
   start_date: "09/2024"
   end_date: "Present"
-  description: "Description:\n
+  description: "Snapshot: Improved radiative modeling, implemented advanced view factor corrections, enhanced `Docker`-based environments, and boosted simulation accuracy, efficiency, and robustness.\n
+\nDescription:\n
   - Enhanced the radiation capabilities of the core thermal simulation engine in _Radian_ by implementing advanced functionalities.\n
   - Utilized containerized infrastructure using `Docker` to improve sandboxing and ensure a robust development environment.\n
   - Developed and integrated new models for calculating and correcting view factors in radiative simulations involving multiple nodes per surface, improving accuracy and reliability.\n
@@ -15,18 +16,22 @@
   location: "Madrid"
   start_date: "07/2023"
   end_date: "Present"
-  description: "Description:\n
-- Built a Direct Hyper-spectral Dual Comb Imaging System for obtaining real-time evolution of the concentration of a gas in a scene.\n
+  description: "Snapshot: Enhanced and operated a dual-comb spectroscopy imaging and data processing system for real-time gas monitoring; contributed to two projects now en route to scientific publications.\n
+\nExperience gained: Developed expertise in advanced spectroscopic techniques through collaborative research, developing methods for measuring absorption spectra of gases such as CH4 and H2O to determine physical properties. Gained valuable skills in building and troubleshooting complex photonic systems and in scientific documentation through experimental reporting.\n
+\nDescription:\n
+- Enhanced and operated a Direct Hyper-spectral Dual Comb Imaging System for obtaining real-time evolution of the concentration of a gas in a scene.\n
 - Used LabVIEW to automate data acquisition.\n
 - Designed experiments for calibration and characterization of sensors and data acquisition systems.\n
-- Modeled experimental setups using Solid Edge."
+- Modeled experimental setups using Solid Edge.\n
+- Contributed to two projects now en route to scientific publications."
 
 - company: "FreeAgent"
   role: "Software Engineering Intern"
   location: "Edinburgh (Remote)"
   start_date: "06/2023"
   end_date: "9/2023"
-  description: "Key Achievements:\n
+  description: "Snapshot: Led the development of a key internal FreeAgent app feature, streamlining workflows, enhancing reusability, and improving automation. Coordinated cross-team collaboration.\n
+\nKey Achievements:\n
 -  Spearheaded the end-to-end development lifecycle of a vital feature within the _FreeAgent_ app, streamlining the workflow for the development team and significantly enhancing reusability and automation. This innovation eliminated redundant code for repetitive tasks.\n
 - Successfully orchestrated cross-team collaboration, and led other engineers throughout the project's duration.\n
 
@@ -49,7 +54,8 @@ Problem-Solving and Initiative:\n
   location: "Madrid and Leeds (Remote)"
   start_date: "06/2022"
   end_date: "05/2023"
-  description: "Description:\n
+  description: "Snapshot: Built a web application for managing summer camp registrations, now in production with over 1,000 users (as of Jan 2025). Led the full development lifecycle and ensured seamless user experience.\n
+\nDescription:\n
 - Developed scalable web applications using `Django` and `Python`.\n
 - Created responsive user interfaces with `HTML`, `CSS` and `JavaScript`.\n
 - Managed large databases using `SQLite`.\n
