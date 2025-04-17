@@ -57,7 +57,15 @@ One consequence of thermodynamic equilibrium is *Kirchhoff's Law of Thermal Radi
 
 Note that the inverse is not necessarily true: a body such that \\(\alpha (\lambda) = \varepsilon (\lambda) \\), \\(\forall \lambda\\), is not necessarily in thermodynamic equilibrium. A clear example of this is the black body, which always satisfies \\(\alpha (\lambda) = \varepsilon (\lambda)\\) (equal to \\(1\\)) but is not necessarily in thermodynamic equilibrium with its surroundings.
 
-Note also that \\(\alpha (\lambda) = \varepsilon (\lambda) \\) does not mean that in thermodynamic equilibrium the power absorbed by the body at each wavelength is equal to the power emitted by the body at that same wavelength, but rather that the absorptivity and emissivity functions are equal at each wavelength. In the case of the absorptivity, we are comparing the power absorbed by the body to the total incident power, while in the case of the emissivity, we are comparing the power emitted by the body to the maximum possible power emitted by any body at the same temperature, which is given by *Plank's Law*:
+#### Principle of Detailed Balance
+
+Kirchhoff's Law of Thermal Radiation is even stronger than this: not only does it hold macroscopically, but also *in detail*.  This is the *Principle of Detailed Balance* [4], which states that, in thermodynamic equilibrium, the power radiated and absorbed by a body must be equal for every infinitesimal surface element, in every direction and polarization state, and across every wavelength interval. In other words, consider an infinitesimal surface element, select any direction and polarization state, and choose an infinitesimal wavelength interval. Under thermodynamic equilibrium, the power entering and leaving that element under those conditions must be equal, resulting in zero net power transfer.
+
+This, of course, highlights just how idealized the concept of thermodynamic equilibrium is, as it requires objects to have perfectly matching emission and absorption spectra. For instance, a black body at temperature \\(T\\) can only be in thermodynamic equilibrium when surrounded by other black bodies at the same temperature. In contrast, a black body interacting with a real body could never achieve true thermodynamic equilibrium (even when at the same temperature), since real bodies typically deviate from ideal behavior (they may not follow Planck’s spectrum, may not emit diffusely, or may exhibit polarization characteristics that differ from those of a black body) and so detailed balance would never be achieved.
+
+### Thermal Equilibrium without Detailed Balance
+
+In general, a system is only considered to be in thermodynamic equilibrium if it satisfies the condition of detailed balance. However, some systems may be in some kind of equilibrium state, where the net macroscopic power exchanged between different elements of the system is zero, but the principle of detailed balance does not apply. In these cases (restricting our discussion to wavelength) \\(\alpha (\lambda) = \varepsilon (\lambda) \\) is verified but it does not mean that the power absorbed by the body at each wavelength is equal to the power emitted by the body at that same wavelength, but rather that the absorptivity and emissivity functions are equal at each wavelength. In the case of the absorptivity, we are comparing the power absorbed by the body to the total incident power, while in the case of the emissivity, we are comparing the power emitted by the body to the maximum possible power emitted by any body at the same temperature, which is given by *Plank's Law*:
 
 \\[
   \text{power absorbed by the body at } \lambda = \alpha (\lambda) \times \text{total incident power at } \lambda
@@ -67,7 +75,7 @@ Note also that \\(\alpha (\lambda) = \varepsilon (\lambda) \\) does not mean tha
 \genfrac{}{}{0pt}{}{\text{power emitted at }\lambda \text{ by a black body}}{\text{at the same temperature}}
 \\]
 
-Clearly, these two quantities are not necessarily equal, even if \\(\alpha (\lambda) = \varepsilon (\lambda)\\). In fact, the power emitted by the body at a specific wavelength does not depend at all on the distribution of the absorbed power in wavelength, but only on the temperature of the body and the absorptivity (or emissivity, since we are in thermodynamic equilibrium) functions at that wavelength.
+Clearly, these two quantities are not necessarily equal, even if \\(\alpha (\lambda) = \varepsilon (\lambda)\\). In fact, the power emitted by the body at a specific wavelength does not depend at all on the distribution of the absorbed power in wavelength, but only on the temperature of the body and its emissivity at that wavelength.
 
 What does need to be equal, however, is the total power absorbed by the body and the total power emitted by the body, which is a consequence of the body being in thermodynamic equilibrium with its surroundings. This is obtained by integrating the power absorbed and emitted over all wavelengths:
 
@@ -79,21 +87,11 @@ What does need to be equal, however, is the total power absorbed by the body and
   P_\text{emitted} = \int_0^\infty \varepsilon (\lambda) \times \genfrac{}{}{0pt}{}{\text{power emitted at }\lambda \text{ by a black body}}{\text{at the same temperature}} \, d\lambda  
 \\]
 
-Thermodynamic equilibrium implies \\( P_\text{absorbed} = P_\text{emitted} \\).
-
-<!-- #### Local Thermodynamic Equilibrium
-
-Wikipedia states the principle of detailed balance (or local thermodynamic equilibrium) as follows: "More generally, all intensive properties are balanced in detail. So for example, the absorptivity at a certain incidence direction, for a certain frequency, of a certain polarization, is the same as the emissivity at the same direction, for the same frequency, of the same polarization. This is the principle of detailed balance. In equilibrium the power radiated and absorbed by the body must be equal for any particular element of area of the body, for any particular direction of polarization, and for any frequency range." -->
+Equilibrium here implies \\( P_\text{absorbed} = P_\text{emitted} \\).
 
 ### Conclusion
 
-*A black body is defined as a perfect absorber and emitter of radiation*, making it a fundamental reference in radiation heat transfer. Its properties allow us to define absorptivity and emissivity, which describe how real materials interact with thermal radiation. *Kirchhoff’s Law establishes that for a body in thermodynamic equilibrium, absorptivity and emissivity are equal at each wavelength*.
-
-A common misconception is that equal absorptivity and emissivity at each wavelength implies that the power absorbed and emitted at each wavelength must also be equal. However, this is not the case—absorptivity relates to the fraction of incident radiation absorbed, while emissivity compares emitted power to that of an ideal black body at the same temperature. The true condition for equilibrium is that the *total power absorbed equals the total power emitted*, which results from integration over all wavelengths.
-
-Another frequent misunderstanding is that a black body is always in thermodynamic equilibrium. While a black body satisfies \\(\alpha(\lambda) = \varepsilon(\lambda) = 1\\) for all wavelengths, it does not necessarily mean it is in equilibrium with its surroundings. Instead, equilibrium depends on the balance between total absorption and emission, rather than the individual values of \\(\alpha(\lambda)\\) and \\(\varepsilon(\lambda)\\).
-
-By carefully distinguishing these principles, we can avoid misinterpretations and correctly apply black body concepts in thermal radiation problems.
+In conclusion, this post has explored the fundamental concept of a *black body* as an idealized perfect absorber and emitter of thermal radiation. We defined *absorptivity* and *emissivity*, highlighting their wavelength dependence and their ideal value of unity for a black body. Furthermore, we delved into the crucial concept of *thermodynamic equilibrium*, introducing *Kirchhoff's Law*, which states that for a body in such equilibrium, its absorptivity and emissivity at a given wavelength are equal. The more stringent condition of the *Principle of Detailed Balance*, requiring equilibrium at every infinitesimal level, was also discussed, emphasizing the highly idealized nature of true thermodynamic equilibrium. Finally, we considered scenarios where macroscopic thermal equilibrium can exist without satisfying detailed balance, focusing on the equality of total absorbed and emitted power. This understanding of black body radiation and thermodynamic equilibrium is essential for various applications in physics and engineering, providing a foundation for analyzing real-world materials and their interactions with thermal radiation.
 
 
 ### Bibliography
@@ -103,3 +101,5 @@ By carefully distinguishing these principles, we can avoid misinterpretations an
 [2] Planck, M. (1901). On the law of distribution of energy in the normal spectrum. Annalen der Physik, 4(3), 553–563.
 
 [3] Kirchhoff, G. (1860). On the relation between the radiating and absorbing powers of different bodies for light and heat. The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 20(130), 1–21. https://doi.org/10.1080/14786446008642901
+
+[4] Reif, F. (2009). Fundamentals of Statistical and Thermal Physics. United States: Waveland Press.
