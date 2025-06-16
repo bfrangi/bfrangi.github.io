@@ -29,7 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #stackoverflow_username: 15159198/clerni
 github_username:  bfrangi
-linkedin_username: bernat-frangi-767748225 
+linkedin_username: bernat-frangi
 
 # Build settings
 remote_theme: jekyll/minima@3cdd14d
